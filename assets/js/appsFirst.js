@@ -8,6 +8,7 @@ $(document).ready(function () {
         adaptiveHeight: true,
         slidesToShow: 1,
         slidesToScroll: 1,
+        initialSlide: 1,
         speed: 1000,
         fade: true,
         autoplay: true,
