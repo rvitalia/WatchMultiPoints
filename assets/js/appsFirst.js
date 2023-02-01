@@ -11,7 +11,7 @@ $(document).ready(function () {
         initialSlide: 1,
         speed: 1000,
         fade: true,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2500,
         prevArrow: '<button type="button" class="slick-prev slide__left"></button>',
         nextArrow: '<button type="button" class="slick-next slide__right"></button>',
