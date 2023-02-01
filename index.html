@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="shortcut icon" href="assets/images/watches/clock96.png" type="image/x-icon">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>Vilant | Watch</title>
+</head>
+<body>
+    <div class="page">
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__wrapper__logo">
+                    <img src="./assets/images/watches/VilAnt.png" alt="">
+                </div>
+                <ul class="header__wrapper__nav">
+                    <li class="header__wrapper__nav__item">
+                        <a href="./index.html">Главная</a>
+                    </li>
+                    <li class="header__wrapper__nav__item">
+                        <a href="./shop.html">Магазин</a>
+                    </li>
+                    <li class="header__wrapper__nav__item">
+                        <a href="./aboutWatch.html">О часах</a>
+                    </li>
+                    <li class="header__wrapper__nav__item">
+                        <a href="./aboutUs.html">О нас</a>
+                    </li>
+                    <!-- <li class="header__wrapper__nav__item">
+                        <a href="">Регистрация</a>
+                    </li>
+                    <li class="header__wrapper__nav__item">
+                        <a href="">Авторизация</a>
+                    </li> -->
+                </ul>
+                <div class="header__wrapper__basket" id="basket__header">
+                    <img src="./assets/images/watches/basket.svg" id="basket__logo" alt="">
+                    <span class="basket__count__items"></span>
+                </div>
+            </div>
+        </div>
+    </header>    <section class="shop__basket" id="basket">
+        <div class="basket__header">
+            <h1 class="basket__title">Корзина</h1>
+            <div class="basket__close"><img id="basket__close" src="./assets/images/shop/icons8-cancel.svg" alt=""></div>
+        </div>
+        <hr>
+        <div class="basket__container" id="basket__container">
+    
+            <div class="basket__items" id="basket__items">
+    
+    
+            </div>
+    
+            <div class="basket__summ">
+                <span class="basket__summ__inner">Итого :</span>
+                <span class="basket__summ__result"> 0 </span>
+            </div>
+        </div>
+        <button class="basket__pay" disabled>Сделать заказ</button>
+    </section>    <section class="modalForm" id="modalForm">
+        <div class="modalForm__container">
+            <div class="modalForm__inner">
+                <h1 class="modalForm__inner__title">Оформление доставки</h1>
+                <form action="https://formspree.io/f/mnqyjvwo" method="post" class="modalForm__inner__form">
+    
+                    <label for="surname" class="modalForm__label form__surname">Фамилия 
+                        <input id="surname" type="text" name="text" class="modalForm__input input__surname" placeholder="Введите вашу фамилию">
+                    </label>
+                    
+    
+                    <label for="name" class="modalForm__label label__name">Имя 
+                        <input id="name"  type="text" name="text" class="modalForm__input input__name" placeholder="Введите ваше имя">
+                    </label>
+                    
+    
+                    <label for="patronymic" class="modalForm__label label__patronymic">Отчество
+                        <input id="patronymic" type="text" name="text" class="modalForm__input input__patronymic" placeholder="Введите ваше отчество">
+                    </label>
+    
+    
+                    <label for="email" class="modalForm__label label__email">Email
+                        <input id="email" type="email" name="email" class="modalForm__input input__email" placeholder="Введите ваш email">
+                    </label>
+    
+    
+                    <label for="tel" class="modalForm__label label__phone">Телефон 
+                        <input id="tel" type="tel" name="tel" class="modalForm__input input__phone" placeholder="Введите ваш телефон">
+                    </label>
+    
+    
+                    <label for="text" class="modalForm__label label__adress">Адрес
+                        <input id="text" type="text" name="text"  class="modalForm__input input__adress" placeholder="Регион,город, улица, дом, квартира, индекс">
+                    </label>
+    
+    
+                    <label for="textarea" class="modalForm__label label__about">Важные заметки для нас
+                        <textarea name="message" id="textarea" class="modalForm__textarea label__about" placeholder="Мы что-то должны еще знать??"> </textarea>
+    
+                    </label>
+    
+                    <label for="" class="modalForm__label label__list">Ваш заказ: 
+                        <input class="input__order" id="input__order" type="text" name="text">
+                    </label>
+                    <div class="modalForm__list">
+                        <!-- <div class="modalForm__list__item">
+                            <div class="modalForm__list__watch">
+                                <img src="" alt="" class="modalForm__list__watch">
+                            </div>
+                            <div class="modalForm__list__countOrders">Выбрана(о) 1 шт.</div>
+                        </div> -->
+                    </div>
+                <!-- <div class="modalForm__list__orderSumm">700 ₽</div> -->
+    
+                    <button class="modalForm__btn" id="modalForm__btn" type="submit">сделать заказ</button>
+                </form>
+            </div>
+        </div>
+        <button class="modalForm__close" id="modalForm__close">
+            <img src="./assets/images/modal/close.svg" alt="close">
+        </button>
+    </section>    
+    
+    
+    <div class="hero__slider">
+        <!-- ===========первый слайд=============== -->
+        <section class="hero hero__man">
+            <div class="hero__slider__inner">
+                <div class="hero__wrapper__watch">
+                    <img src="./assets/images/watches/watch1.png" alt="" class="hero__wrapper__watch__img">
+                </div>
+                <div class="hero__wrapper__content">
+                    <h1 class="hero__wrapper__content__title" id="text1">Стильные</h1>
+                    <div class="aos__content" data-aos="zoom-in">
+                        <h5 class="hero__wrapper__content__subtitle"> Часы</h5>
+                        <img class="hero__wrapper__content__clock" src="./assets/images/watches/clock.svg" alt="">
+                    </div>
+                    <span class="hero__wrapper__content__about" id="text2">Для него</span>
+                </div>
+                <div class="hero__wrapper__people">
+                    <img src="./assets/images/watches/gift-poster-removebg-preview.png" alt=""
+                        class="hero__wrapper__people__img">
+                </div>
+            </div>
+        </section>
+        <!-- ===========второй слайд=============== -->
+    
+        <section class="hero hero__women">
+            <div class="hero__slider__inner">
+                <div class="hero__wrapper__people">
+                    <img src="./assets/images/watches/3preview.png" alt="" class="hero__wrapper__people__img">
+                </div>
+                <div class="hero__wrapper__content">
+                    <h1 class="hero__wrapper__content__title" id="text3">Для нее</h1>
+                    <div class="aos__content">
+                        <h5 class="hero__wrapper__content__subtitle">Часы</h5>
+                        <img class="hero__wrapper__content__clock" src="./assets/images/watches/clock.svg" alt="">
+                    </div>
+                    <span class="hero__wrapper__content__about" id="text4">Элегантные</span>
+                </div>
+                <div class="hero__wrapper__watch">
+                    <img src="./assets/images/watches/4preview.png" alt="" class="hero__wrapper__watch__img">
+                </div>
+            </div>
+        </section>
+    
+    </div>
+    
+    
+    <section class="selected">
+        <div class="container">
+            <div class="selected__inner">
+                <div class="selected__inner__aoscontent" data-aos="fade-right">
+                    <h1 class="selected__inner__title">Почему выгодно покупать у нас?</h1>
+                </div>
+                <div class="selected__inner__wrapper">
+                    <div data-aos="flip-left" data-aos-delay="400" class="selected__inner__wrapper__item">
+                        <h6>Цена-качество</h6>
+                        <img src="./assets/images/selected/guarantee-svgrepo-com.svg" alt="">
+                    </div>
+                    <div data-aos="flip-left" data-aos-delay="700" class="selected__inner__wrapper__item">
+                        <h6>Надежные поставщики</h6>
+                        <img src="./assets/images/selected/4544837-business-comerce-delivery-guarante-shop_121437.svg"
+                            alt="">
+                    </div>
+                    <div data-aos="flip-left" data-aos-delay="1000" class="selected__inner__wrapper__item">
+                        <h6>Бесплатная доставка от 1000р</h6>
+                        <img src="./assets/images/selected/mbridelivery_99588.svg" alt="">
+                    </div>
+                    <div data-aos="flip-left" data-aos-delay="1300" class="selected__inner__wrapper__item">
+                        <h6>Онлайн оплата</h6>
+                        <img src="./assets/images/selected/pay-svgrepo-com.svg" alt="">
+                    </div>
+                    <div data-aos="flip-left" data-aos-delay="1600" class="selected__inner__wrapper__item">
+                        <h6>Гарантия 1 год</h6>
+                        <img src="./assets/images/selected/warranty-term-svgrepo-com.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="sales">
+        <div class="container">
+            <div class="sales__inner">
+                <div data-aos="fade-up">
+                    <h1 class="sales__inner__title">Спеши купить по скидке <b>30%</b></h1>
+                </div>
+                <div class="countdown" data-aos="flip-up" id="countdown">
+                    <!-- <span class="countdown__item"></span>
+                    <span class="countdown__item"></span>
+                    <span class="countdown__item"></span>
+                    <span class="countdown__item"></span> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="map">
+        <div class="container">
+            <div class="map__inner">
+                <div class="aos__content" data-aos="flip-up">
+                    <h1 class="selected__inner__title map__inner__title">Как нас найти?</h1>
+                </div>
+                <div class="map__inner__wrapper">
+                    <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86117.5992892845!2d37.520579350379954!3d55.44524254571265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414aa84ee4fedc35%3A0x1461371650e8e0bd!2z0J_QvtC00L7Qu9GM0YHQuiwg0JzQvtGB0LrQvtCy0YHQutCw0Y8g0L7QsdC7Liwg0KDQvtGB0YHQuNGP!5e0!3m2!1sru!2skz!4v1675112061567!5m2!1sru!2skz' style='border:0;' allowfullscreen='' loading='lazy'                     referrerpolicy='no-referrer-when-downgrade'></iframe></div>
+                </div>
+                <div class="map__inner__form" data-aos="fade-left" data-aos-delay="1500">
+                    <div class="map__inner__form__close">
+                        <img class="map__inner__form__close__img" src="./assets/images/map/reshot-icon-close-8SZ25T6UQY.svg" alt="">
+                    </div>
+                    <form class="map__inner__form__wrapper" action="">
+                        <h1 class="map__inner__form__title">Появились вопросы?</h1>
+                        <label class="map__inner__form__label" for="name">
+                            <input class="map__inner__form__input" id="name" type="text"
+                                placeholder="Как к вам обращаться?">
+                        </label>
+    
+                        <label class="map__inner__form__label" for="email">
+                            <input class="map__inner__form__input" id="email" type="email" placeholder="Ваш email">
+                        </label>
+    
+                        <label class="map__inner__form__label" for="message">
+                            <textarea class="map__inner__form__textarea" name="message" id="message" placeholder="Введите ваше сообщение"></textarea>
+                        </label>
+    
+                        <button class="map__inner__form__button" type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="map__arrow">
+            <img src="./assets/images/map/reshot-icon-block-skip-left-8BTHWPURJZ.svg" alt="">
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__inner__logo">
+                    <img src="./assets/images/watches/VilAnt.png" alt="logo">
+                    <h6 class="footer__inner__text">ИП Рябинина А.И.</h6>
+                </div>
+                <div class="footer__inner__social">
+                    <h1 class="footer__inner__social__title">Также нас можно найти</h1>
+                    <div class="footer__inner__social__block">
+                        <a href="" class="social__item">
+                            <img src="./assets/images/social/whatsapp-svgrepo-com.svg" alt="">
+                        </a>
+                        <a href="" class="social__item">
+                            <img src="./assets/images/social/telegram-svgrepo-com.svg" alt="">
+                        </a>
+                        <a href="" class="social__item">
+                            <img src="./assets/images/social/email-9-svgrepo-com.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__inner__about">
+                    <h2>телефон: </h2>
+                    <a href="tel:+79040956199">+7 904 095 61 99</a>
+                    <h2>Email:</h2>
+                    <a href="email:rvitalia@rambler.ru">rvitalia@rambler.ru</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+	
+	
+	
+	
+	    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="./assets/js/vendor/circletype.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <script src="assets/js/eventClickFP.js"></script>
+    <script src="assets/js/appsFirst.js"></script>
+</body>
+</html>

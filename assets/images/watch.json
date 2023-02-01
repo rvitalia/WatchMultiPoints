@@ -1,0 +1,227 @@
+[
+    {
+        "id": 1,
+        "price" : 1200,
+        "discount": "30%",
+        "imgSRC": "IMG_8794.png",
+        "title" : "Часы наручные мужские",
+        "active": "",
+        "attribute": ["classic","Man"]
+    },
+    {
+        "id": 2,
+        "price" : 1200,
+        "discount": "40%",
+        "imgSRC": "IMG_8798.png",
+        "title" : "Часы наручные мужские",
+        "active": "",
+        "attribute": ["classic","Man"]
+    },
+    {
+        "id": 3,
+        "price" : 1300,
+        "discount": "40%",
+        "imgSRC": "IMG_8804.png",
+        "title" : "Часы наручные мужские",
+        "active": "",
+        "attribute": ["classic","Man"]
+    },
+    {
+        "id": 4,
+        "price" : 1300,
+        "discount": "30%",
+        "imgSRC": "IMG_8807.png",
+        "title" : "Часы наручные мужские",
+        "active": "",
+        "attribute": ["classic","Man"]
+    },
+    {
+        "id": 5,
+        "price" : 1300,
+        "discount": "40%",
+        "imgSRC": "IMG_8810.png",
+        "title" : "Часы наручные мужские",
+        "active": "",
+        "attribute": ["classic","Man"]
+    },
+    {
+        "id": 6,
+        "price" : 1300,
+        "discount": "40%",
+        "imgSRC": "IMG_8817.png",
+        "title" : "Часы наручные мужские",
+        "active": "disabled",
+        "attribute": ["classic","Man"]
+    },
+    {
+        "id": 7,
+        "price" : 1300,
+        "discount": "40%",
+        "imgSRC": "IMG_8818.png",
+        "title" : "Часы наручные женские",
+        "active": "",
+        "attribute": "woman"
+    },
+    {
+        "id": 8,
+        "price" : 1300,
+        "discount": "40%",
+        "imgSRC": "IMG_8820.png",
+        "title" : "Часы наручные женские",
+        "active": "disabled",
+        "attribute": "woman"
+    },
+    {
+        "id": 9,
+        "price" : 1300,
+        "discount": "40%",
+        "imgSRC": "IMG_8824.png",
+        "title" : "Часы наручные мужские",
+        "active": "",
+        "attribute": ["quartz","classic","Man"]
+    },
+    {
+        "id": 10,
+        "price" : 1300,
+        "discount": "40%",
+        "imgSRC": "IMG_8825.png",
+        "title" : "Часы наручные мужские",
+        "active": "",
+        "attribute": ["quartz","classic","Man"]
+    },
+    {
+        "id": 11,
+        "price" : 1300,
+        "discount": "40%",
+        "imgSRC": "IMG_8830.png",
+        "title" : "Часы наручные женские",
+        "active": "",
+        "attribute": "woman"
+    },
+    {
+        "id": 12,
+        "price" : 1300,
+        "discount": "40%",
+        "imgSRC": "IMG_8836.png",
+        "title" : "Часы наручные женские",
+        "active": "",
+        "attribute": "woman"
+    },
+    {
+        "id": 13,
+        "price" : 1300,
+        "discount": "40%",
+        "imgSRC": "IMG_8839.png",
+        "title" : "Часы наручные женские",
+        "active": "",
+        "attribute": "woman"
+    },
+    {
+        "id": 14,
+        "price" : 1300,
+        "discount": "40%",
+        "imgSRC": "IMG_8842.png",
+        "title" : "Часы наручные женские",
+        "active": "",
+        "attribute": "woman"
+    },
+    {
+        "id": 15,
+        "price" : 1300,
+        "discount": "40%",
+        "imgSRC": "IMG_8844.png",
+        "title" : "Часы наручные женские",
+        "active": "disabled",
+        "attribute": "woman"
+    },
+    {
+        "id": 16,
+        "price" : 500,
+        "discount": "40%",
+        "imgSRC": "IMG_8846.png",
+        "title" : "Часы наручные женские",
+        "active": "",
+        "attribute": "woman"
+    },
+    {
+        "id": 17,
+        "price" : 900,
+        "discount": "40%",
+        "imgSRC": "IMG_8847.png",
+        "title" : "Часы наручные женские",
+        "active": "disabled",
+        "attribute": "woman"
+    },
+    {
+        "id": 18,
+        "price" : 1300,
+        "discount": "40%",
+        "imgSRC": "IMG_8848.png",
+        "title" : "Часы наручные женские",
+        "active": "disabled",
+        "attribute": "woman"
+    },
+    {
+        "id": 19,
+        "price" : 700,
+        "discount": "40%",
+        "imgSRC": "IMG_8849.png",
+        "title" : "Часы наручные женские",
+        "active": "disabled",
+        "attribute": "woman"
+    },
+    {
+        "id": 20,
+        "price" : 600,
+        "discount": "40%",
+        "imgSRC": "IMG_8850.png",
+        "title" : "Часы наручные женские",
+        "active": "",
+        "attribute": "woman"
+    },
+    {
+        "id": 21,
+        "price" : 2000,
+        "discount": "40%",
+        "imgSRC": "IMG_8851.png",
+        "title" : "Часы наручные женские",
+        "active": "",
+        "attribute": "woman"
+    },
+    {
+        "id": 22,
+        "price" : 1200,
+        "discount": "40%",
+        "imgSRC": "IMG_8853.png",
+        "title" : "Часы наручные женские",
+        "active": "",
+        "attribute": "woman"
+    },
+    {
+        "id": 22,
+        "price" : 1200,
+        "discount": "40%",
+        "imgSRC": "IMG_8818.png",
+        "title" : "Часы наручные женские",
+        "active": "",
+        "attribute": "woman"
+    },
+        {
+        "id": 23,
+        "price" : 1000,
+        "discount": "40%",
+        "imgSRC": "IMG_9011.png",
+        "title" : "Часы наручные ",
+        "active": "",
+        "attribute": "digital"
+    },
+        {
+        "id": 224,
+        "price" : 1500,
+        "discount": "40%",
+        "imgSRC": "IMG_9006.png",
+        "title" : "Часы наручные",
+        "active": "",
+        "attribute": "digital"
+    }
+]
