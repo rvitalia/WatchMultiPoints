@@ -44,6 +44,29 @@
                         <a href="">Авторизация</a>
                     </li> -->
                 </ul>
+    
+                <!-- ===================слайдер для мобильной версии============== -->
+                <!-- Разметка слайдера (html код) -->
+                <div class="itcss" id="slider__mobile">
+                    <div class="itcss__wrapper">
+                        <div class="itcss__items">
+                            <div class="itcss__item header__wrapper__nav__item">
+                                <a href="./index.html">   Главная</a>
+                            </div>
+                            <div class="itcss__item header__wrapper__nav__item">
+                                <a href="./shop.html">Магазин</a>
+                            </div>
+                            <div class="itcss__item header__wrapper__nav__item">
+                                <a href="./aboutWatch.html">О часах</a>
+                            </div>
+                            <div class="itcss__item header__wrapper__nav__item">
+                                <a href="./aboutUs.html">О нас</a>
+                            </div>
+                        </div>
+                    </div>            
+                </div>
+    <!-- =================== конец слайдера для мобильной версии============== -->
+    
                 <div class="header__wrapper__basket" id="basket__header">
                     <img src="./assets/images/watches/basket.svg" id="basket__logo" alt="">
                     <span class="basket__count__items"></span>
@@ -132,52 +155,56 @@
         </button>
     </section>    
     
-    
+    <!-- ======================титульный слайдер======================= -->
     <div class="hero__slider">
         <!-- ===========первый слайд=============== -->
         <section class="hero hero__man">
-            <div class="hero__slider__inner">
-                <div class="hero__wrapper__watch">
-                    <img src="./assets/images/watches/watch1.png" alt="" class="hero__wrapper__watch__img">
-                </div>
-                <div class="hero__wrapper__content">
-                    <h1 class="hero__wrapper__content__title" id="text1">Стильные</h1>
-                    <div class="aos__content" data-aos="zoom-in">
-                        <h5 class="hero__wrapper__content__subtitle"> Часы</h5>
-                        <img class="hero__wrapper__content__clock" src="./assets/images/watches/clock.svg" alt="">
+            <div class="container container__hero">
+                <div class="hero__slider__inner">
+                    <div class="hero__wrapper__watch">
+                        <img src="./assets/images/watches/watch1.png" alt="" id="clock1" class="hero__wrapper__watch__img">
                     </div>
-                    <span class="hero__wrapper__content__about" id="text2">Для него</span>
-                </div>
-                <div class="hero__wrapper__people">
-                    <img src="./assets/images/watches/gift-poster-removebg-preview.png" alt=""
-                        class="hero__wrapper__people__img">
+                    <div class="hero__wrapper__content">
+                        <h1 class="hero__wrapper__content__title" id="text1">Cтильные</h1>
+                        <div class="aos__content">
+                            <h5 class="hero__wrapper__content__subtitle">Часы</h5>
+                            <img class="hero__wrapper__content__clock" src="./assets/images/watches/clock.svg" alt="">
+                        </div>
+                        <span class="hero__wrapper__content__about" id="text2">для него</span>
+                    </div>
+                    <div class="hero__wrapper__people">
+                        <img src="./assets/images/watches/gift-poster-removebg-preview.png" alt=""
+                            class="hero__wrapper__people__img">
+                    </div>
                 </div>
             </div>
         </section>
         <!-- ===========второй слайд=============== -->
     
         <section class="hero hero__women">
-            <div class="hero__slider__inner">
-                <div class="hero__wrapper__people">
-                    <img src="./assets/images/watches/3preview.png" alt="" class="hero__wrapper__people__img">
-                </div>
-                <div class="hero__wrapper__content">
-                    <h1 class="hero__wrapper__content__title" id="text3">Для нее</h1>
-                    <div class="aos__content">
-                        <h5 class="hero__wrapper__content__subtitle">Часы</h5>
-                        <img class="hero__wrapper__content__clock" src="./assets/images/watches/clock.svg" alt="">
+            <div class="container container__hero">
+                <div class="hero__slider__inner">
+                    <div class="hero__wrapper__people">
+                        <img src="./assets/images/watches/3preview.png" id="people1" alt="" class="hero__wrapper__people__img">
                     </div>
-                    <span class="hero__wrapper__content__about" id="text4">Элегантные</span>
-                </div>
-                <div class="hero__wrapper__watch">
-                    <img src="./assets/images/watches/4preview.png" alt="" class="hero__wrapper__watch__img">
+                    <div class="hero__wrapper__content">
+                        <h1 class="hero__wrapper__content__title" id="text3">Элегантные</h1>
+                        <div class="aos__content">
+                            <h5 class="hero__wrapper__content__subtitle">Часы</h5>
+                            <img class="hero__wrapper__content__clock" src="./assets/images/watches/clock.svg" alt="">
+                        </div>
+                        <span class="hero__wrapper__content__about" id="text4">для нее</span>
+                    </div>
+                    <div class="hero__wrapper__watch">
+                        <img src="./assets/images/watches/4preview.png" alt="" class="hero__wrapper__watch__img">
+                    </div>
                 </div>
             </div>
         </section>
     
     </div>
     
-    
+    <!-- ==========================блок select================= -->
     <section class="selected">
         <div class="container">
             <div class="selected__inner">
@@ -211,7 +238,7 @@
         </div>
     </section>
     
-    
+    <!-- ==================блок распродажи============== -->
     <section class="sales">
         <div class="container">
             <div class="sales__inner">
@@ -228,18 +255,44 @@
         </div>
     </section>
     
+    <!-- ===========================блок карты================= -->
     <section class="map">
-        <div class="container">
+        <div class="container map__container">
             <div class="map__inner">
-                <div class="aos__content" data-aos="flip-up">
+                <div class="aos__content__map" data-aos="flip-up">
                     <h1 class="selected__inner__title map__inner__title">Как нас найти?</h1>
                 </div>
                 <div class="map__inner__wrapper">
-                    <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86117.5992892845!2d37.520579350379954!3d55.44524254571265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414aa84ee4fedc35%3A0x1461371650e8e0bd!2z0J_QvtC00L7Qu9GM0YHQuiwg0JzQvtGB0LrQvtCy0YHQutCw0Y8g0L7QsdC7Liwg0KDQvtGB0YHQuNGP!5e0!3m2!1sru!2skz!4v1675112061567!5m2!1sru!2skz' style='border:0;' allowfullscreen='' loading='lazy'                     referrerpolicy='no-referrer-when-downgrade'></iframe></div>
+                    <style>
+                        .embed-container {
+                            position: relative;
+                            padding-bottom: 56.25%;
+                            height: 0;
+                            min-height: 56.25rem;
+                            overflow: hidden;
+                            max-width: 100%;
+                        }
+    
+                        .embed-container iframe,
+                        .embed-container object,
+                        .embed-container embed {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            min-height: 56.25rem;
+                        }
+                    </style>
+                    <div class='embed-container'><iframe
+                            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86117.5992892845!2d37.520579350379954!3d55.44524254571265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414aa84ee4fedc35%3A0x1461371650e8e0bd!2z0J_QvtC00L7Qu9GM0YHQuiwg0JzQvtGB0LrQvtCy0YHQutCw0Y8g0L7QsdC7Liwg0KDQvtGB0YHQuNGP!5e0!3m2!1sru!2skz!4v1675112061567!5m2!1sru!2skz'
+                            style='border:0;' allowfullscreen='' loading='lazy'
+                            referrerpolicy='no-referrer-when-downgrade'></iframe></div>
                 </div>
                 <div class="map__inner__form" data-aos="fade-left" data-aos-delay="1500">
                     <div class="map__inner__form__close">
-                        <img class="map__inner__form__close__img" src="./assets/images/map/reshot-icon-close-8SZ25T6UQY.svg" alt="">
+                        <img class="map__inner__form__close__img" src="./assets/images/map/reshot-icon-close-8SZ25T6UQY.svg"
+                            alt="">
                     </div>
                     <form class="map__inner__form__wrapper" action="">
                         <h1 class="map__inner__form__title">Появились вопросы?</h1>
@@ -253,7 +306,8 @@
                         </label>
     
                         <label class="map__inner__form__label" for="message">
-                            <textarea class="map__inner__form__textarea" name="message" id="message" placeholder="Введите ваше сообщение"></textarea>
+                            <textarea class="map__inner__form__textarea" name="message" id="message"
+                                placeholder="Введите ваше сообщение"></textarea>
                         </label>
     
                         <button class="map__inner__form__button" type="submit">Отправить</button>
@@ -287,27 +341,21 @@
                     </div>
                 </div>
                 <div class="footer__inner__about">
-                    <h2>телефон: </h2>
-                    <a href="tel:+79040956199">+7 904 095 61 99</a>
-                    <h2>Email:</h2>
-                    <a href="email:rvitalia@rambler.ru">rvitalia@rambler.ru</a>
+                    <div class="footer__inner__about__wrapper">
+                        <h2>телефон: </h2>
+                        <a href="tel:+79040956199">+7 904 095 61 99</a>
+                    </div>
+                    <div class="footer__inner__about__wrapper">
+                        <h2>Email:</h2>
+                        <a href="email:rvitalia@rambler.ru">rvitalia@rambler.ru</a>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
 
     </div>
-	
-	
-	
-	
-	    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-    <script src="./assets/js/vendor/circletype.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-
-    <script src="assets/js/eventClickFP.js"></script>
-    <script src="assets/js/appsFirst.js"></script>
+    <script src="assets/js/app1.js"></script>
 </body>
 </html>

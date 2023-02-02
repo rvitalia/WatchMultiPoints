@@ -1183,80 +1183,60 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
     display: none;
 }
 
-/**
- * Accordion v3.3.2
- * Lightweight and accessible accordion module created in pure Javascript
- * https://github.com/michu2k/Accordion
- *
- * Copyright (c) Michał Strumpf
- * Published under MIT License
- */
-.ac {
-    margin-top: 10px;
-    border: 1px solid #eee;
-    background-color: #fff;
-    box-sizing: border-box;
-}
-
-.ac .ac-header {
+.accordionjs {
+    position: relative;
     margin: 0;
     padding: 0;
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    z-index: 0;
 }
 
-.ac .ac-trigger {
-    font: bold 16px Arial, sans-serif;
-    color: #111;
-    text-align: left;
-    width: 100%;
-    padding: 10px 30px 10px 10px;
+.accordionjs .acc_section {
+    border: 1px solid #ccc;
+    position: relative;
+    z-index: 10;
+    margin-top: -1px;
+    overflow: hidden;
+}
+
+.accordionjs .acc_section .acc_head {
+    position: relative;
+    background: rgba(255, 102, 0, 0.5);
+    padding: 10px;
     display: block;
     cursor: pointer;
-    background-color: transparent;
-    transition: color 0.25s ease;
-    position: relative;
-    text-decoration: none;
-    margin: 0;
-    border: 0;
 }
 
-.ac .ac-trigger::after {
-    content: "+";
-    text-align: center;
-    width: 15px;
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    position: absolute;
-    right: 10px;
-    top: 50%;
+.accordionjs .acc_section .acc_head h3 {
+    line-height: 1;
+    margin: 5px 0;
 }
 
-.ac .ac-trigger:focus {
-    color: #8a8a8a;
+.accordionjs .acc_section .acc_content {
+    padding: 2rem 2.5rem;
 }
 
-.ac .ac-panel {
-    overflow: hidden;
-    transition-property: height, visibility;
-    transition-timing-function: ease;
+.accordionjs .acc_section:first-of-type,
+.accordionjs .acc_section:first-of-type .acc_head {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 }
 
-.ac .ac-panel .ac-text {
-    font: 15px/24px Arial, sans-serif;
-    color: #111;
-    padding: 10px;
-    margin: 0;
+.accordionjs .acc_section:last-of-type,
+.accordionjs .acc_section:last-of-type .acc_content {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 
-.ac.js-enabled .ac-panel {
-    visibility: hidden;
+.accordionjs .acc_section.acc_active > .acc_content {
+    display: block;
 }
 
-.ac.is-active .ac-panel {
-    visibility: visible;
-}
-
-.ac.is-active > .ac-header .ac-trigger::after {
-    content: "–";
+.accordionjs .acc_section.acc_active > .acc_head {
+    background: rgb(255, 102, 0);
+    border-bottom: 1px solid #ccc;
 }
 
 @font-face {
@@ -1395,6 +1375,13 @@ body {
     width: 60rem;
     margin: 0 auto;
     padding: 0 2rem;
+}
+
+.container--aboutwatch {
+    width: 100%;
+    max-width: 90rem;
+    padding: 0 2rem;
+    margin: 0 auto;
 }
 
 .page {
@@ -2641,6 +2628,98 @@ body {
         -webkit-transform: scale(1);
         transform: scale(1);
     }
+}
+
+.aboutwatch {
+    color: #fff;
+}
+
+.aboutwatch__inner {
+    padding: 5rem 0;
+}
+
+.aboutwatch__inner__title {
+    margin: 5rem 0;
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
+    color: #FF6600;
+    padding: 2.5rem;
+    border: solid 2px rgba(255, 102, 0, 0.5);
+    border-radius: 0.8rem;
+    box-shadow: 0 0 0.1rem rgba(255, 102, 0, 0.5), 0 0 0.2rem rgba(255, 102, 0, 0.5), 0 0 0.3rem rgba(255, 102, 0, 0.9), 0 0 0.8rem rgba(255, 102, 0, 0.9), 0 0 1rem rgba(255, 102, 0, 0.9), inset 0 0 1.3rem rgba(255, 102, 0, 0.9);
+}
+
+.accordionjs {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.aboutwatch__accordeon__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2;
+}
+
+.aboutwatch__accordeon__text {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.aboutwatch__accordeon__img {
+    width: 35%;
+    float: right;
+    border-radius: 2rem;
+    margin: 0 0 1.5rem 1.5rem;
+}
+
+.aboutus {
+    padding: 5rem 0;
+    color: rgba(255, 102, 0, 0.5);
+    line-height: 1.5;
+}
+
+.aboutus__title {
+    padding: 3rem 0;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #FF6600;
+    text-align: center;
+}
+
+.aboutus__inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.aboutus__inner__firstcontent {
+    width: 28%;
+}
+
+.aboutus__inner__subtitle {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.aboutus__inner__subtext {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: black;
+    text-align: right;
+}
+
+.aboutus__inner__secondcontent {
+    width: 68%;
+}
+
+.aboutus__inner__firstcontent, .aboutus__inner__secondcontent {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .footer {
