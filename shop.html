@@ -44,7 +44,7 @@
                         <a href="">Авторизация</a>
                     </li> -->
                 </ul>
-
+    
                 <!-- ===================слайдер для мобильной версии============== -->
                 <!-- Разметка слайдера (html код) -->
                 <div class="itcss" id="slider__mobile">
@@ -66,6 +66,7 @@
                     </div>            
                 </div>
     <!-- =================== конец слайдера для мобильной версии============== -->
+    
                 <div class="header__wrapper__basket" id="basket__header">
                     <img src="./assets/images/watches/basket.svg" id="basket__logo" alt="">
                     <span class="basket__count__items"></span>
@@ -95,40 +96,40 @@
         <div class="modalForm__container">
             <div class="modalForm__inner">
                 <h1 class="modalForm__inner__title">Оформление доставки</h1>
-                <form action="https://formspree.io/f/mnqyjvwo" method="post" class="modalForm__inner__form">
+                <!--   -->
+                <form method="post" action="https://formspree.io/f/mnqyjvwo" class="modalForm__inner__form">
     
-                    <label for="surname" class="modalForm__label form__surname">Фамилия 
-                        <input id="surname" type="text" name="text" class="modalForm__input input__surname" placeholder="Введите вашу фамилию">
-                    </label>
+                    <label for="surname" class="modalForm__label form__surname">Фамилия Имя Отчество
+                        <input id="surname" type="text" name="text" class="modalForm__input input__surname" placeholder="Введите вашу фамилию" pattern="^[А-Яа-яЁёs]+$" required>
                     
     
-                    <label for="name" class="modalForm__label label__name">Имя 
-                        <input id="name"  type="text" name="text" class="modalForm__input input__name" placeholder="Введите ваше имя">
-                    </label>
+                        <input id="name"  type="text" name="text" required class="modalForm__input input__name" pattern="^[А-Яа-яЁёs]+$" placeholder="Введите ваше имя">
+                    
                     
     
-                    <label for="patronymic" class="modalForm__label label__patronymic">Отчество
-                        <input id="patronymic" type="text" name="text" class="modalForm__input input__patronymic" placeholder="Введите ваше отчество">
+                        <input id="patronymic" type="text" name="text" required class="modalForm__input input__patronymic" pattern="^[А-Яа-яЁёs]+$" placeholder="Введите ваше отчество">
                     </label>
     
     
                     <label for="email" class="modalForm__label label__email">Email
-                        <input id="email" type="email" name="email" class="modalForm__input input__email" placeholder="Введите ваш email">
+                        <input id="email" type="email" name="email" required class="modalForm__input input__email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Введите ваш email">
                     </label>
     
     
                     <label for="tel" class="modalForm__label label__phone">Телефон 
-                        <input id="tel" type="tel" name="tel" class="modalForm__input input__phone" placeholder="Введите ваш телефон">
+                        <input id="tel" type="tel" name="tel" required class="modalForm__input input__phone" pattern="[0-9]{9,11}" placeholder="Введите ваш телефон (без пробелов и скобок)">
                     </label>
     
     
                     <label for="text" class="modalForm__label label__adress">Адрес
-                        <input id="text" type="text" name="text"  class="modalForm__input input__adress" placeholder="Регион,город, улица, дом, квартира, индекс">
+                        <input  type="text" name="text" required  class="modalForm__input input__adress" placeholder="индекс" pattern="[0-9]{6}">
+                        <input  type="text" name="text" required  class="modalForm__input input__adress" placeholder="улица дом">
+                        <input  type="text" name="text" required  class="modalForm__input input__adress" placeholder="квартира">
                     </label>
     
     
                     <label for="textarea" class="modalForm__label label__about">Важные заметки для нас
-                        <textarea name="message" id="textarea" class="modalForm__textarea label__about" placeholder="Мы что-то должны еще знать??"> </textarea>
+                        <textarea name="message" id="textarea" class="modalForm__textarea textarea__about" placeholder="Мы что-то должны еще знать??"> </textarea>
     
                     </label>
     
@@ -156,14 +157,14 @@
     
     
     
-    <section class="shop">
-        <div class="container">
+    <section class="shop" >
+        <div class="container shop--container">
             <div class="shop__wrapper">
                 <h1 class="shop__wrapper__title">Категории</h1>
+    
+    
+                <!-- ====================категориии=========================== -->
                 <div class="shop__wrapper__inner">
-    
-                    <!-- ====================категориии=========================== -->
-    
                     <div class="shop__wrapper__category">
                         <h6 class="shop__wrapper__category__title">Классические</h6>
                         <img data-cat="classic" src="./assets/images/shop/IMG_8794-removebg-preview.png" alt=""
@@ -191,6 +192,15 @@
                     </div>
                 </div>
     
+                <div class="shop__wrapper__category__mobile">
+                    <button data-cat="classic" class="shop__wrapper__category__mobile__btn">Классические</button>
+                    <button data-cat="Man" class="shop__wrapper__category__mobile__btn">Мужские</button>
+                    <button data-cat="digital" class="shop__wrapper__category__mobile__btn">Цифровые</button>
+                    <button data-cat="woman" class="shop__wrapper__category__mobile__btn">Женские</button>
+                    <button data-cat="quartz" class="shop__wrapper__category__mobile__btn">Кварцевые</button>
+                </div>
+    
+    
                 <div class="shop__wrapper__inner__all" id="all__watch">
                     <span class="all__items">П</span>
                     <span class="all__items">о</span>
@@ -216,7 +226,7 @@
     
     
                 <!-- ============================часы============================= -->
-                <h1 class="shop__wrapper__items__title">Магазин</h1>
+                <h1 class="shop__wrapper__items__title" data-scroll="scroll-to">Магазин</h1>
     
                 <div class="shop__wrapper__items" id="watch--container">
     
@@ -245,22 +255,26 @@
                 <div class="footer__inner__social">
                     <h1 class="footer__inner__social__title">Также нас можно найти</h1>
                     <div class="footer__inner__social__block">
-                        <a href="" class="social__item">
+                        <a href="https://wa.me/79040956199" class="social__item" target="_blank">
                             <img src="./assets/images/social/whatsapp-svgrepo-com.svg" alt="">
                         </a>
-                        <a href="" class="social__item">
+                        <a href="https://t.me/+79040956199" class="social__item" target="_blank">
                             <img src="./assets/images/social/telegram-svgrepo-com.svg" alt="">
                         </a>
-                        <a href="" class="social__item">
+                        <a href="mailto:rvitalia@rambler.ru" class="social__item" target="_blank">
                             <img src="./assets/images/social/email-9-svgrepo-com.svg" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="footer__inner__about">
-                    <h2>телефон: </h2>
-                    <a href="tel:+79040956199">+7 904 095 61 99</a>
-                    <h2>Email:</h2>
-                    <a href="email:rvitalia@rambler.ru">rvitalia@rambler.ru</a>
+                    <div class="footer__inner__about__wrapper">
+                        <h2>телефон: </h2>
+                        <a href="tel:+79040956199">+7 904 095 61 99</a>
+                    </div>
+                    <div class="footer__inner__about__wrapper">
+                        <h2>Email:</h2>
+                        <a href="email:rvitalia@rambler.ru">rvitalia@rambler.ru</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -268,7 +282,7 @@
 
     </div>
 
-    <script src="assets/js/eventClick.js"></script>
-    <script src="assets/js/appsSecond.js"></script>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

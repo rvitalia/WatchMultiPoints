@@ -96,40 +96,40 @@
         <div class="modalForm__container">
             <div class="modalForm__inner">
                 <h1 class="modalForm__inner__title">Оформление доставки</h1>
-                <form action="https://formspree.io/f/mnqyjvwo" method="post" class="modalForm__inner__form">
+                <!--   -->
+                <form method="post" action="https://formspree.io/f/mnqyjvwo" class="modalForm__inner__form">
     
-                    <label for="surname" class="modalForm__label form__surname">Фамилия 
-                        <input id="surname" type="text" name="text" class="modalForm__input input__surname" placeholder="Введите вашу фамилию">
-                    </label>
+                    <label for="surname" class="modalForm__label form__surname">Фамилия Имя Отчество
+                        <input id="surname" type="text" name="text" class="modalForm__input input__surname" placeholder="Введите вашу фамилию" pattern="^[А-Яа-яЁёs]+$" required>
                     
     
-                    <label for="name" class="modalForm__label label__name">Имя 
-                        <input id="name"  type="text" name="text" class="modalForm__input input__name" placeholder="Введите ваше имя">
-                    </label>
+                        <input id="name"  type="text" name="text" required class="modalForm__input input__name" pattern="^[А-Яа-яЁёs]+$" placeholder="Введите ваше имя">
+                    
                     
     
-                    <label for="patronymic" class="modalForm__label label__patronymic">Отчество
-                        <input id="patronymic" type="text" name="text" class="modalForm__input input__patronymic" placeholder="Введите ваше отчество">
+                        <input id="patronymic" type="text" name="text" required class="modalForm__input input__patronymic" pattern="^[А-Яа-яЁёs]+$" placeholder="Введите ваше отчество">
                     </label>
     
     
                     <label for="email" class="modalForm__label label__email">Email
-                        <input id="email" type="email" name="email" class="modalForm__input input__email" placeholder="Введите ваш email">
+                        <input id="email" type="email" name="email" required class="modalForm__input input__email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Введите ваш email">
                     </label>
     
     
                     <label for="tel" class="modalForm__label label__phone">Телефон 
-                        <input id="tel" type="tel" name="tel" class="modalForm__input input__phone" placeholder="Введите ваш телефон">
+                        <input id="tel" type="tel" name="tel" required class="modalForm__input input__phone" pattern="[0-9]{9,11}" placeholder="Введите ваш телефон (без пробелов и скобок)">
                     </label>
     
     
                     <label for="text" class="modalForm__label label__adress">Адрес
-                        <input id="text" type="text" name="text"  class="modalForm__input input__adress" placeholder="Регион,город, улица, дом, квартира, индекс">
+                        <input  type="text" name="text" required  class="modalForm__input input__adress" placeholder="индекс" pattern="[0-9]{6}">
+                        <input  type="text" name="text" required  class="modalForm__input input__adress" placeholder="улица дом">
+                        <input  type="text" name="text" required  class="modalForm__input input__adress" placeholder="квартира">
                     </label>
     
     
                     <label for="textarea" class="modalForm__label label__about">Важные заметки для нас
-                        <textarea name="message" id="textarea" class="modalForm__textarea label__about" placeholder="Мы что-то должны еще знать??"> </textarea>
+                        <textarea name="message" id="textarea" class="modalForm__textarea textarea__about" placeholder="Мы что-то должны еще знать??"> </textarea>
     
                     </label>
     
@@ -294,23 +294,24 @@
                         <img class="map__inner__form__close__img" src="./assets/images/map/reshot-icon-close-8SZ25T6UQY.svg"
                             alt="">
                     </div>
-                    <form class="map__inner__form__wrapper" action="">
+                    <form class="map__inner__form__wrapper" action="https://formspree.io/f/xdovajkp"
+                    method="POST">
                         <h1 class="map__inner__form__title">Появились вопросы?</h1>
-                        <label class="map__inner__form__label" for="name">
-                            <input class="map__inner__form__input" id="name" type="text"
-                                placeholder="Как к вам обращаться?">
+                        <label class="map__inner__form__label" for="questionname">
+                            <input class="map__inner__form__input" id="questionname" type="text"
+                                placeholder="Как к вам обращаться?" required>
                         </label>
     
-                        <label class="map__inner__form__label" for="email">
-                            <input class="map__inner__form__input" id="email" type="email" placeholder="Ваш email">
+                        <label class="map__inner__form__label" for="questionemail" >
+                            <input class="map__inner__form__input" id="questionemail" type="email" placeholder="Ваш email" required>
                         </label>
     
-                        <label class="map__inner__form__label" for="message">
-                            <textarea class="map__inner__form__textarea" name="message" id="message"
-                                placeholder="Введите ваше сообщение"></textarea>
+                        <label class="map__inner__form__label" for="questionmessage">
+                            <textarea class="map__inner__form__textarea" name="message" id="questionmessage"
+                                placeholder="Введите ваше сообщение" required></textarea>
                         </label>
     
-                        <button class="map__inner__form__button" type="submit">Отправить</button>
+                        <button id="map__inner__form__button" class="map__inner__form__button" type="button">Отправить</button>
                     </form>
                 </div>
             </div>
@@ -329,13 +330,13 @@
                 <div class="footer__inner__social">
                     <h1 class="footer__inner__social__title">Также нас можно найти</h1>
                     <div class="footer__inner__social__block">
-                        <a href="" class="social__item">
+                        <a href="https://wa.me/79040956199" class="social__item" target="_blank">
                             <img src="./assets/images/social/whatsapp-svgrepo-com.svg" alt="">
                         </a>
-                        <a href="" class="social__item">
+                        <a href="https://t.me/+79040956199" class="social__item" target="_blank">
                             <img src="./assets/images/social/telegram-svgrepo-com.svg" alt="">
                         </a>
-                        <a href="" class="social__item">
+                        <a href="mailto:rvitalia@rambler.ru" class="social__item" target="_blank">
                             <img src="./assets/images/social/email-9-svgrepo-com.svg" alt="">
                         </a>
                     </div>
@@ -356,6 +357,7 @@
 
     </div>
 
-    <script src="assets/js/app1.js"></script>
+
+    <script src="assets/js/app.js"></script>
 </body>
 </html>
