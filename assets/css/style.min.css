@@ -1179,6 +1179,10 @@ html, body {
   scroll-behavior: smooth;
 }
 
+.show_block {
+  cursor: pointer;
+}
+
 /* Работает в Chrome, Edge и Safari */
 *::-webkit-scrollbar {
   width: 5px;
@@ -1534,11 +1538,11 @@ body {
 @media (max-width: 576px) {
   .hero__wrapper__people__img {
     position: absolute;
-    top: 10rem;
+    top: 15rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 0;
-    opacity: 0.3;
+    opacity: 0.4;
     filter: blur(1px);
     max-width: 30rem;
   }
@@ -1571,6 +1575,8 @@ body {
   text-align: left;
   padding-bottom: 5rem;
   opacity: 0.7;
+  position: relative;
+  z-index: 1;
 }
 @media (max-width: 992px) {
   .hero__wrapper__content__title {
@@ -1590,6 +1596,8 @@ body {
 }
 
 .hero__wrapper__content__subtitle {
+  position: relative;
+  z-index: 1;
   text-align: center;
   letter-spacing: 50px;
   font-weight: 800;
@@ -1628,6 +1636,8 @@ body {
 .hero__wrapper__content__about {
   display: block;
   padding-top: 6rem;
+  position: relative;
+  z-index: 1;
   font-family: "Cormorant Infant", serif;
   font-weight: 700;
   font-style: italic;
@@ -1682,6 +1692,12 @@ body {
 .slide__right:hover {
   opacity: 1;
   transform: scale(1.1);
+}
+@media (max-width: 576px) {
+  .slide__left:hover,
+  .slide__right:hover {
+    transform: none;
+  }
 }
 
 .slide__right {
@@ -1845,6 +1861,9 @@ body {
   color: #fff;
   font-weight: 700;
   text-shadow: 6px 6px 0 rgba(255, 102, 0, 0.5);
+}
+.all__items span {
+  pointer-events: none;
 }
 
 .shop__wrapper__inner__all {

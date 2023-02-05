@@ -1456,6 +1456,10 @@ html, body {
     scroll-behavior: smooth;
 }
 
+.show_block {
+    cursor: pointer;
+}
+
 /* Работает в Chrome, Edge и Safari */
 *::-webkit-scrollbar {
     width: 5px;
@@ -2210,6 +2214,10 @@ body {
     color: #fff;
     font-weight: 700;
     text-shadow: 6px 6px 0 rgba(255, 102, 0, 0.5);
+}
+
+.all__items span {
+    pointer-events: none;
 }
 
 .shop__wrapper__inner__all {
@@ -3494,20 +3502,43 @@ body {
     text-align: center;
 }
 
+@media (max-width: 576px) {
+    .aboutus__title {
+        font-size: 3rem;
+    }
+}
+
 .aboutus__inner {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .aboutus__inner__firstcontent {
     width: 28%;
+    min-width: 28rem;
+}
+
+@media (max-width: 992px) {
+    .aboutus__inner__firstcontent {
+        margin: 0 auto 3rem;
+    }
 }
 
 .aboutus__inner__subtitle {
     font-weight: 700;
     font-size: 1.8rem;
+}
+
+@media (max-width: 576px) {
+    .aboutus__inner__subtitle {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
 }
 
 .aboutus__inner__subtext {
@@ -3517,8 +3548,23 @@ body {
     text-align: right;
 }
 
+@media (max-width: 576px) {
+    .aboutus__inner__subtext {
+        display: block;
+        width: 100%;
+        text-align: right;
+    }
+}
+
 .aboutus__inner__secondcontent {
     width: 68%;
+    min-width: 28rem;
+}
+
+@media (max-width: 992px) {
+    .aboutus__inner__secondcontent {
+        margin: 0 auto;
+    }
 }
 
 .aboutus__inner__firstcontent, .aboutus__inner__secondcontent {
