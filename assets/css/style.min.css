@@ -1696,7 +1696,8 @@ body {
 @media (max-width: 576px) {
   .slide__left:hover,
   .slide__right:hover {
-    transform: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
   }
 }
 
@@ -1772,17 +1773,6 @@ body {
   }
 }
 
-.shop__wrapper__inner {
-  margin-top: 3rem;
-  display: flex;
-  justify-content: space-between;
-}
-@media (max-width: 900px) {
-  .shop__wrapper__inner {
-    display: none;
-  }
-}
-
 .shop__wrapper__category__mobile {
   display: none;
 }
@@ -1794,20 +1784,44 @@ body {
     top: 50%;
     transform: rotate(-90deg) translateY(-50%);
     margin-left: -25rem;
+    color: #FF6600;
+    font-size: 1.4rem;
+    background-color: transparent;
+    font-weight: 500;
   }
+}
+.shop__wrapper__category__mobile--active {
+  display: flex;
+  gap: 4rem;
+  width: 100%;
+  justify-content: space-between;
+  position: fixed;
+  top: 5rem;
+  right: 0;
+  z-index: 20;
+  color: #fff;
+  text-shadow: 0 0 2px white, 0 0 4px white, 0 0 8px white, 0 0 12px white, 0 0 16px white;
+  font-size: 2rem;
+  font-weight: 700;
+  transition: all 0.6s linear;
+  transform: translateX(-100%);
+  opacity: 0;
+  cursor: pointer;
 }
 
 .shop__wrapper__category__mobile__btn {
+  text-shadow: inherit;
   padding: 1rem 1.5rem;
-  font-size: 1.4rem;
-  color: #FF6600;
-  font-weight: 500;
+  font-size: inherit;
+  color: inherit;
+  font-weight: inherit;
   background-color: transparent;
   border: none;
   text-transform: uppercase;
   border-radius: 2rem;
   transition: all 0.4s linear;
   position: relative;
+  cursor: pointer;
 }
 .shop__wrapper__category__mobile__btn:not(:last-child) {
   margin-right: 0.5rem;
@@ -1822,37 +1836,56 @@ body {
   width: 100%;
   height: 100%;
   border: 1px solid #fff;
+  background-color: inherit;
   position: absolute;
   top: 0;
   left: 0;
   transform: skewX(-45deg);
 }
 
-.shop__wrapper__category__title {
-  padding-top: 1.5rem;
-  text-align: center;
-  font-weight: 400;
-  color: #fff;
-  font-size: 2rem;
-  padding-bottom: 2rem;
+.shop__wrapper__inner {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+@media (max-width: 900px) {
+  .shop__wrapper__inner {
+    display: none;
+  }
 }
 
 .shop__wrapper__category {
   overflow: hidden;
   cursor: pointer;
-  transition: transform 2.5s linear;
+  transition: transform 2s linear;
+  display: flex;
+  flex-direction: column;
 }
 .shop__wrapper__category:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .shop__wrapper__category:not(:last-child) {
   margin-right: 3rem;
 }
 
+.shop__wrapper__category__title {
+  padding-top: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+}
+
 .shop__wrapper__category__img {
   border-radius: 3rem;
-  width: 100%;
-  height: auto;
+  height: 100%;
+  max-height: 25rem;
+  width: auto;
+  flex-grow: 1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .all__items {
@@ -1919,7 +1952,7 @@ body {
 }
 
 .watch__img {
-  max-width: 25rem;
+  max-width: 18rem;
   width: 100%;
   height: auto;
   overflow: hidden;
@@ -1935,8 +1968,16 @@ body {
     height: auto;
   }
 }
+@media (max-width: 576px) {
+  .watch__img {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+  }
+}
 
 .shop__wrapper__items__item {
+  flex: 1 0 30%;
+  max-width: 353.34px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -1956,9 +1997,10 @@ body {
 
 .shop__wrapper__item__content__title {
   padding-top: 1rem;
-  font-size: 2rem;
+  font-size: 2.1rem;
   line-height: 1.5;
   margin-bottom: 2rem;
+  font-weight: 700;
 }
 
 .item__detail__count {
@@ -2003,16 +2045,18 @@ body {
 }
 
 .item__price__count {
+  min-width: 11.2rem;
   font-size: 3rem;
   position: relative;
   margin-right: 2rem;
+  padding: 0 1rem;
 }
 .item__price__count::after {
   width: 100%;
   height: 0.3rem;
   content: "";
   position: absolute;
-  top: 2rem;
+  top: 1rem;
   right: 0;
   background-color: red;
   transform: rotate(-16deg);
@@ -2037,6 +2081,7 @@ body {
 }
 
 .item__price__result {
+  min-width: 13rem;
   font-size: 3.5rem;
   padding: 1.5rem 1rem 0;
   font-weight: 700;
