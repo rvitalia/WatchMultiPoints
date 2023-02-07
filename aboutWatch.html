@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     
@@ -16,337 +17,341 @@
     
     <title>Vilant | Watch</title>
 </head>
+
 <body>
     <div class="page">
-    <header class="header">
-        <div class="container">
-            <div class="header__wrapper">
-                <div class="header__wrapper__logo">
-                    <img src="./assets/images/watches/VilAnt.png" alt="">
-                </div>
-                <ul class="header__wrapper__nav">
-                    <li class="header__wrapper__nav__item">
-                        <a href="./index.html">Главная</a>
-                    </li>
-                    <li class="header__wrapper__nav__item">
-                        <a href="./shop.html">Магазин</a>
-                    </li>
-                    <li class="header__wrapper__nav__item">
-                        <a href="./aboutWatch.html">О часах</a>
-                    </li>
-                    <li class="header__wrapper__nav__item">
-                        <a href="./aboutUs.html">О нас</a>
-                    </li>
-                    <!-- <li class="header__wrapper__nav__item">
-                        <a href="">Регистрация</a>
-                    </li>
-                    <li class="header__wrapper__nav__item">
-                        <a href="">Авторизация</a>
-                    </li> -->
-                </ul>
-    
-                <!-- ===================слайдер для мобильной версии============== -->
-                <!-- Разметка слайдера (html код) -->
-                <div class="itcss" id="slider__mobile">
-                    <div class="itcss__wrapper">
-                        <div class="itcss__items">
-                            <div class="itcss__item header__wrapper__nav__item">
-                                <a href="./index.html">   Главная</a>
-                            </div>
-                            <div class="itcss__item header__wrapper__nav__item">
-                                <a href="./shop.html">Магазин</a>
-                            </div>
-                            <div class="itcss__item header__wrapper__nav__item">
-                                <a href="./aboutWatch.html">О часах</a>
-                            </div>
-                            <div class="itcss__item header__wrapper__nav__item">
-                                <a href="./aboutUs.html">О нас</a>
-                            </div>
-                        </div>
-                    </div>            
-                </div>
-    <!-- =================== конец слайдера для мобильной версии============== -->
-    
-                <div class="header__wrapper__basket" id="basket__header">
-                    <img src="./assets/images/watches/basket.svg" id="basket__logo" alt="">
-                    <span class="basket__count__items"></span>
-                </div>
-            </div>
-        </div>
-    </header>    <!-- <div class="shop__wrapper"> -->
-        <section class="shop__basket" id="basket">
-            <div class="basket__header">
-                <h1 class="basket__title">Корзина</h1>
-                <div class="basket__close"><img id="basket__close" src="./assets/images/shop/icons8-cancel.svg" alt=""></div>
-            </div>
-            <hr>
-            <div class="basket__container" id="basket__container">
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="header__wrapper__logo">
+                        <img src="./assets/images/watches/VilAnt.png" alt="">
+                    </div>
+                    <ul class="header__wrapper__nav">
+                        <li class="header__wrapper__nav__item">
+                            <a href="./index.html">Главная</a>
+                        </li>
+                        <li class="header__wrapper__nav__item">
+                            <a href="./shop.html">Магазин</a>
+                        </li>
+                        <li class="header__wrapper__nav__item">
+                            <a href="./aboutWatch.html">О часах</a>
+                        </li>
+                        <li class="header__wrapper__nav__item">
+                            <a href="./aboutUs.html">О нас</a>
+                        </li>
+                        <!-- <li class="header__wrapper__nav__item">
+                            <a href="">Регистрация</a>
+                        </li>
+                        <li class="header__wrapper__nav__item">
+                            <a href="">Авторизация</a>
+                        </li> -->
+                    </ul>
         
-                <div class="basket__items" id="basket__items">
-        
-        
-                </div>
-        
-                <div class="basket__summ">
-                    <span class="basket__summ__inner">Итого :</span>
-                    <span class="basket__summ__result"> 0 </span>
-                </div>
-            </div>
-            <button class="basket__pay" disabled>Сделать заказ</button>
-        </section>
-    <!-- </div> -->    <section class="modalForm" id="modalForm">
-        <div class="modalForm__container">
-            <div class="modalForm__inner">
-                <h1 class="modalForm__inner__title">Оформление доставки</h1>
-                <!--   -->
-                <form method="post" action="https://formspree.io/f/mnqyjvwo" class="modalForm__inner__form">
-    
-                    <label for="surname" class="modalForm__label form__surname">Фамилия Имя Отчество
-                        <input id="surname" type="text" name="text" class="modalForm__input input__surname" placeholder="Введите вашу фамилию" pattern="^[А-Яа-яЁёs]+$" required>
-                    
-    
-                        <input id="name"  type="text" name="text" required class="modalForm__input input__name" pattern="^[А-Яа-яЁёs]+$" placeholder="Введите ваше имя">
-                    
-                    
-    
-                        <input id="patronymic" type="text" name="text" required class="modalForm__input input__patronymic" pattern="^[А-Яа-яЁёs]+$" placeholder="Введите ваше отчество">
-                    </label>
-    
-    
-                    <label for="email" class="modalForm__label label__email">Email
-                        <input id="email" type="email" name="email" required class="modalForm__input input__email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Введите ваш email">
-                    </label>
-    
-    
-                    <label for="tel" class="modalForm__label label__phone">Телефон 
-                        <input id="tel" type="tel" name="tel" required class="modalForm__input input__phone" pattern="[0-9]{9,11}" placeholder="Введите ваш телефон (без пробелов и скобок)">
-                    </label>
-    
-    
-                    <label for="text" class="modalForm__label label__adress">Адрес
-                        <input  type="text" name="text" required  class="modalForm__input input__adress" placeholder="индекс" pattern="[0-9]{6}">
-                        <input  type="text" name="text" required  class="modalForm__input input__adress" placeholder="улица дом">
-                        <input  type="text" name="text" required  class="modalForm__input input__adress" placeholder="квартира">
-                    </label>
-    
-    
-                    <label for="textarea" class="modalForm__label label__about">Важные заметки для нас
-                        <textarea name="message" id="textarea" class="modalForm__textarea textarea__about" placeholder="Мы что-то должны еще знать??"> </textarea>
-    
-                    </label>
-    
-                    <label for="" class="modalForm__label label__list">Ваш заказ: 
-                        <input class="input__order" id="input__order" type="text" name="text">
-                    </label>
-                    <div class="modalForm__list">
-                        <!-- <div class="modalForm__list__item">
-                            <div class="modalForm__list__watch">
-                                <img src="" alt="" class="modalForm__list__watch">
+                    <!-- ===================слайдер для мобильной версии============== -->
+                    <!-- Разметка слайдера (html код) -->
+                    <div class="itcss" id="slider__mobile">
+                        <div class="itcss__wrapper">
+                            <div class="itcss__items">
+                                <div class="itcss__item header__wrapper__nav__item">
+                                    <a href="./index.html">   Главная</a>
+                                </div>
+                                <div class="itcss__item header__wrapper__nav__item">
+                                    <a href="./shop.html">Магазин</a>
+                                </div>
+                                <div class="itcss__item header__wrapper__nav__item">
+                                    <a href="./aboutWatch.html">О часах</a>
+                                </div>
+                                <div class="itcss__item header__wrapper__nav__item">
+                                    <a href="./aboutUs.html">О нас</a>
+                                </div>
                             </div>
-                            <div class="modalForm__list__countOrders">Выбрана(о) 1 шт.</div>
-                        </div> -->
+                        </div>            
                     </div>
-                <!-- <div class="modalForm__list__orderSumm">700 ₽</div> -->
-    
-                    <button class="modalForm__btn" id="modalForm__btn" type="submit">сделать заказ</button>
-                </form>
-            </div>
-        </div>
-        <button class="modalForm__close" id="modalForm__close">
-            <img src="./assets/images/modal/close.svg" alt="close">
-        </button>
-    </section>    
-    
-    <section class="aboutwatch">
-        <div class="container--aboutwatch">
-            <div class="aboutwatch__inner">
-    
-                <h1 class="aboutwatch__inner__title">Инструкции и руководства</h1>
-    
-                <ul id="my-accordion" class="accordionjs">
-    
-                    <!-- Section 1 -->
-                    <li class="aboutwatch__accordeon__item">
-                        <div class="aboutwatch__accordeon__title">Общие правила эксплуатации механических часов</div>
-                        <div class="aboutwatch__accordeon__text"> <img class="aboutwatch__accordeon__img" src="./assets/images/aboutwatch/IMG_9077.jpg" alt="">
-                        Со временем изнашивается даже самый надежный механизм. Продлить жизнь наручных часов с механическим автоподзаводом поможет
-                        соблюдение нескольких простых правил по эксплуатации.
-    
-                        При установке времени первоначально выдвиньте заводную коронку так, чтобы она была полностью
-                        вытянута,
-                        при этом нужно проследить, чтобы секундная стрелка застыла на шкале «12 часов». Затем вращая
-                        заводную
-                        коронку по часовой стрелке, установите текущее время. После этого верните коронку в нейтральное,
-                        то есть
-                        изначальное положение. Время установлено!
-    
-                        Корректировать дату ни в коем случае нельзя в промежуток между 21.00 и 03.00 часами. Ваши
-                        элитные часы
-                        могут повредиться. При коррекции даты заводную коронку нужно вытянуть наполовину, затем вращая
-                        коронку
-                        установить дату и вернуть ее на первоначальное положение.
-    
-                        Если у вас часы-хронограф, то есть часы, оснащенные дополнительной функцией, позволяющей
-                        измерять
-                        интервалы времени (секунды, минуты, часы) — включение режима хронографа происходит при нажатии
-                        кнопки
-                        «Старт», а отключение при повторном нажатии этой же кнопки.
-    
-                        Все механические швейцарские наручные часы оснащены водонепроницаемостью, которая достигается за
-                        счет
-                        прокладок, завинчивающейся заводной коронки и задней крышки на винтах. Но от перепада
-                        температур, от
-                        воздействия пыли и пота на прокладки водонепроницаемость существенно снижается. Поэтому, чтобы
-                        уберечь
-                        уникальный механизм тонкой работы, любые оригинальные швейцарские часы стоит снимать перед
-                        посещением
-                        сауны, душа, плаванием и погружением под воду. Помните, что плавать можно лишь с дайверскими
-                        часами,
-                        водонепроницаемость которых начинается от 300 метров!
-    
-                        Если у Вас механические часы с ручным автоподзаводом, не забывайте каждое утро их заводить. Для
-                        этого
-                        прокрутите заводную коронку по часовой стрелке до тех пор, пока не почувствуете сопротивление.
-    
-                        Поддержать изначальный внешний вид достаточно просто – регулярно чистите часы, исключая кожаный
-                        ремешок,
-                        мягкой тряпкой, смоченной в теплом мыльном растворе. Ну а если соблюдать простое правило – не
-                        оставлять
-                        элитные швейцарские часы на солнце, во влажных местах и не подвергать сильным колебаниям
-                        температур, то
-                        часы будут радовать Вас своим утонченным дизайном еще долгие годы.
-                        </div>
-                    </li>
-    
-                    <!-- Section 2 -->
-                    <li class="aboutwatch__accordeon__item">
-                        <div class="aboutwatch__accordeon__title">Влагозащищенность наручных часов</div>
-                        <div class="aboutwatch__accordeon__text"> <img class="aboutwatch__accordeon__img" src="./assets/images/aboutwatch/cropped-s.jpg" alt="">
-                        Водонепроницаемость измеряют в метрах, атмосферах и барах. Один бар равен одной атмосфере, а
-                        одна атмосфера равна 10 метрам давления под водой. То есть при 1 баре (или 1 атм.) часы могут
-                        выдержать давление воды на глубине 10 метров. Таким образом, пометки могут быть такими, Water
-                        resistant 3 ATM; Water resistant 3 BAR; Water resistant 30 metеrs.
-    
-                        РАССМОТРИМ ВСЕ 5 КЛАССОВ СТЕПЕНИ ГЕРМЕТИЧНОСТИ ЧАСОВ
-                        I.Надпись Water resistant. Часы с таким обозначением выдержат брызги и дождь, но не более того.
-    
-                        II.Water resistant 3 ATM (30м.). Минимальная степень защиты, так же выдержат не большие
-                        нагрузки, дождь, случайное попадание не большого количества воды. Купаться в душе с ними опасно.
-    
-                        III.Water resistant 5 АТМ (50 м.). Часы с такой пометкой вызывают больше всего спорных вопросов.
-                        Производители часов уверяют, что с ними можно плавать. Но часовщики не рекомендуют этот делать.
-                        Такой аксессуар с возможностью выдержки до 5 АТМ, могут противостоять попадению пота, дождя. А
-                        так же можно принимать душь и погружать в воду на кратковременный срок.
-    
-                        IV.Water resistant 10 АТМ (100 м.). Эти часы предназначены для плавания, но не выдержат
-                        погружение с аквалангом. После того как часы попали под воду и находились в ней какое-то время,
-                        обязательно нужно их промыть проточной водой и высушить. Желательно, когда аксессуар находится
-                        под водой, не крутить и не трогать заводной механизм, это снижает риск попадания влаги.
-    
-                        V. Water resistant 20 АТМ (200 м.). Этот аксессуар герметично укомплектован,такие часы
-                        рекомендовано использовать дайверам, но погружение не может быть дольше чем на 2 часа.
-    
-                        Если нет значения Water Resistant или Water Resist, часы негерметичными и не смогу выдержать
-                        давление под водой, а также простого попадание воды. Существуют, конечно же исключения! В часах
-                        высшего класса на корпусе практически нет информации, т.е. надписи W.R. может и не быть. К таким
-                        аксессуарам прилагается инструкция и паспорт, в которых обязательно будет написано все о
-                        влагостойкости часов.
-    
-                        Ненужно надеется на то, что такая функция, как водонепроницаемость будет вечна на вашем приборе.
-                        Но есть советы, как ухаживать за такими часами, для того, чтоб они прослужили намного дольше.
-                        Один раз в 2 года надо отвезти в сервисный центр для чистки и смазки резиновых уплотнителей. В
-                        варианте, если часы кварцевые их необходимо проверять на водостойкость каждый раз после замера
-                        батареи. Если в аксессуар попала вода, то сразу же нужно обращаться к мастеру. К сожалению, нет
-                        официального органа, который бы проводил испытания по одной форме и устанавливал форматы
-                        влагостойкости аксессуара. Оценивание разных производителей может отличаться. Поэтому не стоит в
-                        буквальном смысле воспринимать надпись «30 м» как разрешение погружать часы на тридцать метров
-                        под воду.
-                    </div>
-                </li>
-    
-                <!-- Section 3 -->
-                <li class="aboutwatch__accordeon__item">
-                    <div class="aboutwatch__accordeon__title">Хронограф</div>
-                    <div class="aboutwatch__accordeon__text"> <img class="aboutwatch__accordeon__img" src="./assets/images/aboutwatch/hronograf-anons.jpg" alt="">
-                        Хронограф – это прибор, который не только измеряет, но и фиксирует время, а
-                        именно его отдельные промежутки. Самый простой хронограф – это секундомер, он не только считает
-                        пройденные с начала замера секунды, но и точно фиксирует их количество после финиша. Раньше
-                        хронографы выпускались как отдельные устройства, а сейчас их часто встраивают в наручные часы –
-                        это позволяет фиксировать с их помощью уже минуты и часы. Для этих целей достаточно только
-                        нажимать кнопки на боковой части часов: запускать, завершать и обнулять отсчет. Опять-таки,
-                        раньше встроенные в часы приборы были однокнопочными, но сегодня появились женские и мужские
-                        часы с более сложным механизмом – например, сплит-хронографом с двумя стрелками. Они позволяют
-                        одновременно следить за разными событиями, и фиксировать их продолжительность по отдельности. В
-                        управлении данными приборами участвует уже три кнопки: за счет этого одну из стрелок можно
-                        останавливать раньше. Также востребована функция flyback – обнуление и новый старт за одно
-                        нажатие. Хронограф — это одно из самых популярных и классических усложнений наручных часов. Его
-                        главное и основное предназначение — измерять измерять определенные промежутки времени
-                        одновременно с индикацией основного времени.
-                        </div>
-                    </li>
-    
-                    <!-- Section 4 -->
-                    <li class="aboutwatch__accordeon__item">
-                        <div class="aboutwatch__accordeon__title">Батарейки</div>
-                        <div class="aboutwatch__accordeon__text"> <img class="aboutwatch__accordeon__img" src="./assets/images/aboutwatch/battary.png" alt="">
-                        Чтобы поставить новый элемент питания придется разобрать устройство и вытащить
-                        изношенный источник тока. Желательно сделать это до того, как потечет электролит. Подобное может
-                        произойти из-за плохого качества накопителя тока или по причине долгого нахождения элемента в
-                        часах. Например, если батарейка села и находится в них по нескольку лет. Неиспользуемые
-                        батарейки тем не менее склонны к потере заряда со временем. Объем этих потерь зависит от условий
-                        хранения и типа батареек. Литиевые батарейки как правило имеют напряжение 3 Вольта (и большие
-                        размеры). При температуре 21 градус потери для оксид-серебряных и алкалиновых батареек находятся
-                        в пределах 10%, а для литиевых составляют около 2% в год. Определение нужного типа батарейки.
-                        Различные производители применяют различные способы маркировки элементов питания, в добавок, как
-                        мы написали выше, алкалиновые батарейки могут быть заменены аналогичными по размеру
-                        оксид-серебряными. В связи с этим если Вы держите в руках свою старую батарейку и Вам нужна
-                        новая, вопрос о том, какую именно выбрать тем не менее может не иметь такого уж простого ответа.
-                        </div>
-                    </li>
-    
-                </ul>
-    
-            </div>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__inner">
-                <div class="footer__inner__logo">
-                    <img src="./assets/images/watches/VilAnt.png" alt="logo">
-                    <h6 class="footer__inner__text">ИП Рябинина А.И.</h6>
-                </div>
-                <div class="footer__inner__social">
-                    <h1 class="footer__inner__social__title">Также нас можно найти</h1>
-                    <div class="footer__inner__social__block">
-                        <a href="https://wa.me/79040956199" class="social__item" target="_blank">
-                            <img src="./assets/images/social/whatsapp-svgrepo-com.svg" alt="">
-                        </a>
-                        <a href="https://t.me/+79040956199" class="social__item" target="_blank">
-                            <img src="./assets/images/social/telegram-svgrepo-com.svg" alt="">
-                        </a>
-                        <a href="mailto:rvitalia@rambler.ru" class="social__item" target="_blank">
-                            <img src="./assets/images/social/email-9-svgrepo-com.svg" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="footer__inner__about">
-                    <div class="footer__inner__about__wrapper">
-                        <h2>телефон: </h2>
-                        <a href="tel:+79040956199">+7 904 095 61 99</a>
-                    </div>
-                    <div class="footer__inner__about__wrapper">
-                        <h2>Email:</h2>
-                        <a href="email:rvitalia@rambler.ru">rvitalia@rambler.ru</a>
+        <!-- =================== конец слайдера для мобильной версии============== -->
+        
+                    <div class="header__wrapper__basket" id="basket__header">
+                        <img src="./assets/images/watches/basket.svg" id="basket__logo" alt="">
+                        <span class="basket__count__items"></span>
                     </div>
                 </div>
             </div>
+        </header>        <!-- <div class="shop__wrapper"> -->
+            <section class="shop__basket" id="basket">
+                <div class="basket__header">
+                    <h1 class="basket__title">Корзина</h1>
+                    <div class="basket__close"><img id="basket__close" src="./assets/images/shop/icons8-cancel.svg" alt=""></div>
+                </div>
+                <hr>
+                <div class="basket__container" id="basket__container">
+            
+                    <div class="basket__items" id="basket__items">
+            
+            
+                    </div>
+            
+                    <div class="basket__summ">
+                        <span class="basket__summ__inner">Итого :</span>
+                        <span class="basket__summ__result"> 0 </span>
+                    </div>
+                </div>
+                <button class="basket__pay" disabled>Сделать заказ</button>
+            </section>
+        <!-- </div> -->        <section class="modalForm" id="modalForm">
+            <div class="modalForm__container">
+                <div class="modalForm__inner">
+                    <h1 class="modalForm__inner__title">Оформление доставки</h1>
+                    <!--   -->
+                    <form method="post" action="https://formspree.io/f/mnqyjvwo" class="modalForm__inner__form">
+        
+                        <label for="surname" class="modalForm__label form__surname">Фамилия Имя Отчество
+                            <input id="surname" type="text" name="text" class="modalForm__input input__surname" placeholder="Введите вашу фамилию" pattern="^[А-Яа-яЁёs]+$" required>
+                        
+        
+                            <input id="name"  type="text" name="text" required class="modalForm__input input__name" pattern="^[А-Яа-яЁёs]+$" placeholder="Введите ваше имя">
+                        
+                        
+        
+                            <input id="patronymic" type="text" name="text" required class="modalForm__input input__patronymic" pattern="^[А-Яа-яЁёs]+$" placeholder="Введите ваше отчество">
+                        </label>
+        
+        
+                        <label for="email" class="modalForm__label label__email">Email
+                            <input id="email" type="email" name="email" required class="modalForm__input input__email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Введите ваш email">
+                        </label>
+        
+        
+                        <label for="tel" class="modalForm__label label__phone">Телефон 
+                            <input id="tel" type="tel" name="tel" required class="modalForm__input input__phone" pattern="[0-9]{9,11}" placeholder="Введите ваш телефон (без пробелов и скобок)">
+                        </label>
+        
+        
+                        <label for="text" class="modalForm__label label__adress">Адрес
+                            <input  type="text" name="text" required  class="modalForm__input input__adress" placeholder="индекс" pattern="[0-9]{6}">
+                            <input  type="text" name="text" required  class="modalForm__input input__adress" placeholder="улица дом">
+                            <input  type="text" name="text" required  class="modalForm__input input__adress" placeholder="квартира">
+                        </label>
+        
+        
+                        <label for="textarea" class="modalForm__label label__about">Важные заметки для нас
+                            <textarea name="message" id="textarea" class="modalForm__textarea textarea__about" placeholder="Мы что-то должны еще знать??"> </textarea>
+        
+                        </label>
+        
+                        <label for="" class="modalForm__label label__list">Ваш заказ: 
+                            <input class="input__order" id="input__order" type="text" name="text">
+                        </label>
+                        <div class="modalForm__list">
+                            <!-- <div class="modalForm__list__item">
+                                <div class="modalForm__list__watch">
+                                    <img src="" alt="" class="modalForm__list__watch">
+                                </div>
+                                <div class="modalForm__list__countOrders">Выбрана(о) 1 шт.</div>
+                            </div> -->
+                        </div>
+                    <!-- <div class="modalForm__list__orderSumm">700 ₽</div> -->
+        
+                        <button class="modalForm__btn" id="modalForm__btn" type="submit">сделать заказ</button>
+                    </form>
+                </div>
+            </div>
+            <button class="modalForm__close" id="modalForm__close">
+                <img src="./assets/images/modal/close.svg" alt="close">
+            </button>
+        </section>        <div class="main">
+            
+            
+            <section class="aboutwatch">
+                <div class="container--aboutwatch">
+                    <div class="aboutwatch__inner">
+            
+                        <h1 class="aboutwatch__inner__title">Инструкции и руководства</h1>
+            
+                        <ul id="my-accordion" class="accordionjs">
+            
+                            <!-- Section 1 -->
+                            <li class="aboutwatch__accordeon__item">
+                                <div class="aboutwatch__accordeon__title">Общие правила эксплуатации механических часов</div>
+                                <div class="aboutwatch__accordeon__text"> <img class="aboutwatch__accordeon__img" src="./assets/images/aboutwatch/IMG_9077.jpg" alt="">
+                                Со временем изнашивается даже самый надежный механизм. Продлить жизнь наручных часов с механическим автоподзаводом поможет
+                                соблюдение нескольких простых правил по эксплуатации.
+            
+                                При установке времени первоначально выдвиньте заводную коронку так, чтобы она была полностью
+                                вытянута,
+                                при этом нужно проследить, чтобы секундная стрелка застыла на шкале «12 часов». Затем вращая
+                                заводную
+                                коронку по часовой стрелке, установите текущее время. После этого верните коронку в нейтральное,
+                                то есть
+                                изначальное положение. Время установлено!
+            
+                                Корректировать дату ни в коем случае нельзя в промежуток между 21.00 и 03.00 часами. Ваши
+                                элитные часы
+                                могут повредиться. При коррекции даты заводную коронку нужно вытянуть наполовину, затем вращая
+                                коронку
+                                установить дату и вернуть ее на первоначальное положение.
+            
+                                Если у вас часы-хронограф, то есть часы, оснащенные дополнительной функцией, позволяющей
+                                измерять
+                                интервалы времени (секунды, минуты, часы) — включение режима хронографа происходит при нажатии
+                                кнопки
+                                «Старт», а отключение при повторном нажатии этой же кнопки.
+            
+                                Все механические швейцарские наручные часы оснащены водонепроницаемостью, которая достигается за
+                                счет
+                                прокладок, завинчивающейся заводной коронки и задней крышки на винтах. Но от перепада
+                                температур, от
+                                воздействия пыли и пота на прокладки водонепроницаемость существенно снижается. Поэтому, чтобы
+                                уберечь
+                                уникальный механизм тонкой работы, любые оригинальные швейцарские часы стоит снимать перед
+                                посещением
+                                сауны, душа, плаванием и погружением под воду. Помните, что плавать можно лишь с дайверскими
+                                часами,
+                                водонепроницаемость которых начинается от 300 метров!
+            
+                                Если у Вас механические часы с ручным автоподзаводом, не забывайте каждое утро их заводить. Для
+                                этого
+                                прокрутите заводную коронку по часовой стрелке до тех пор, пока не почувствуете сопротивление.
+            
+                                Поддержать изначальный внешний вид достаточно просто – регулярно чистите часы, исключая кожаный
+                                ремешок,
+                                мягкой тряпкой, смоченной в теплом мыльном растворе. Ну а если соблюдать простое правило – не
+                                оставлять
+                                элитные швейцарские часы на солнце, во влажных местах и не подвергать сильным колебаниям
+                                температур, то
+                                часы будут радовать Вас своим утонченным дизайном еще долгие годы.
+                                </div>
+                            </li>
+            
+                            <!-- Section 2 -->
+                            <li class="aboutwatch__accordeon__item">
+                                <div class="aboutwatch__accordeon__title">Влагозащищенность наручных часов</div>
+                                <div class="aboutwatch__accordeon__text"> <img class="aboutwatch__accordeon__img" src="./assets/images/aboutwatch/cropped-s.jpg" alt="">
+                                Водонепроницаемость измеряют в метрах, атмосферах и барах. Один бар равен одной атмосфере, а
+                                одна атмосфера равна 10 метрам давления под водой. То есть при 1 баре (или 1 атм.) часы могут
+                                выдержать давление воды на глубине 10 метров. Таким образом, пометки могут быть такими, Water
+                                resistant 3 ATM; Water resistant 3 BAR; Water resistant 30 metеrs.
+            
+                                РАССМОТРИМ ВСЕ 5 КЛАССОВ СТЕПЕНИ ГЕРМЕТИЧНОСТИ ЧАСОВ
+                                I.Надпись Water resistant. Часы с таким обозначением выдержат брызги и дождь, но не более того.
+            
+                                II.Water resistant 3 ATM (30м.). Минимальная степень защиты, так же выдержат не большие
+                                нагрузки, дождь, случайное попадание не большого количества воды. Купаться в душе с ними опасно.
+            
+                                III.Water resistant 5 АТМ (50 м.). Часы с такой пометкой вызывают больше всего спорных вопросов.
+                                Производители часов уверяют, что с ними можно плавать. Но часовщики не рекомендуют этот делать.
+                                Такой аксессуар с возможностью выдержки до 5 АТМ, могут противостоять попадению пота, дождя. А
+                                так же можно принимать душь и погружать в воду на кратковременный срок.
+            
+                                IV.Water resistant 10 АТМ (100 м.). Эти часы предназначены для плавания, но не выдержат
+                                погружение с аквалангом. После того как часы попали под воду и находились в ней какое-то время,
+                                обязательно нужно их промыть проточной водой и высушить. Желательно, когда аксессуар находится
+                                под водой, не крутить и не трогать заводной механизм, это снижает риск попадания влаги.
+            
+                                V. Water resistant 20 АТМ (200 м.). Этот аксессуар герметично укомплектован,такие часы
+                                рекомендовано использовать дайверам, но погружение не может быть дольше чем на 2 часа.
+            
+                                Если нет значения Water Resistant или Water Resist, часы негерметичными и не смогу выдержать
+                                давление под водой, а также простого попадание воды. Существуют, конечно же исключения! В часах
+                                высшего класса на корпусе практически нет информации, т.е. надписи W.R. может и не быть. К таким
+                                аксессуарам прилагается инструкция и паспорт, в которых обязательно будет написано все о
+                                влагостойкости часов.
+            
+                                Ненужно надеется на то, что такая функция, как водонепроницаемость будет вечна на вашем приборе.
+                                Но есть советы, как ухаживать за такими часами, для того, чтоб они прослужили намного дольше.
+                                Один раз в 2 года надо отвезти в сервисный центр для чистки и смазки резиновых уплотнителей. В
+                                варианте, если часы кварцевые их необходимо проверять на водостойкость каждый раз после замера
+                                батареи. Если в аксессуар попала вода, то сразу же нужно обращаться к мастеру. К сожалению, нет
+                                официального органа, который бы проводил испытания по одной форме и устанавливал форматы
+                                влагостойкости аксессуара. Оценивание разных производителей может отличаться. Поэтому не стоит в
+                                буквальном смысле воспринимать надпись «30 м» как разрешение погружать часы на тридцать метров
+                                под воду.
+                            </div>
+                        </li>
+            
+                        <!-- Section 3 -->
+                        <li class="aboutwatch__accordeon__item">
+                            <div class="aboutwatch__accordeon__title">Хронограф</div>
+                            <div class="aboutwatch__accordeon__text"> <img class="aboutwatch__accordeon__img" src="./assets/images/aboutwatch/hronograf-anons.jpg" alt="">
+                                Хронограф – это прибор, который не только измеряет, но и фиксирует время, а
+                                именно его отдельные промежутки. Самый простой хронограф – это секундомер, он не только считает
+                                пройденные с начала замера секунды, но и точно фиксирует их количество после финиша. Раньше
+                                хронографы выпускались как отдельные устройства, а сейчас их часто встраивают в наручные часы –
+                                это позволяет фиксировать с их помощью уже минуты и часы. Для этих целей достаточно только
+                                нажимать кнопки на боковой части часов: запускать, завершать и обнулять отсчет. Опять-таки,
+                                раньше встроенные в часы приборы были однокнопочными, но сегодня появились женские и мужские
+                                часы с более сложным механизмом – например, сплит-хронографом с двумя стрелками. Они позволяют
+                                одновременно следить за разными событиями, и фиксировать их продолжительность по отдельности. В
+                                управлении данными приборами участвует уже три кнопки: за счет этого одну из стрелок можно
+                                останавливать раньше. Также востребована функция flyback – обнуление и новый старт за одно
+                                нажатие. Хронограф — это одно из самых популярных и классических усложнений наручных часов. Его
+                                главное и основное предназначение — измерять измерять определенные промежутки времени
+                                одновременно с индикацией основного времени.
+                                </div>
+                            </li>
+            
+                            <!-- Section 4 -->
+                            <li class="aboutwatch__accordeon__item">
+                                <div class="aboutwatch__accordeon__title">Батарейки</div>
+                                <div class="aboutwatch__accordeon__text"> <img class="aboutwatch__accordeon__img" src="./assets/images/aboutwatch/battary.png" alt="">
+                                Чтобы поставить новый элемент питания придется разобрать устройство и вытащить
+                                изношенный источник тока. Желательно сделать это до того, как потечет электролит. Подобное может
+                                произойти из-за плохого качества накопителя тока или по причине долгого нахождения элемента в
+                                часах. Например, если батарейка села и находится в них по нескольку лет. Неиспользуемые
+                                батарейки тем не менее склонны к потере заряда со временем. Объем этих потерь зависит от условий
+                                хранения и типа батареек. Литиевые батарейки как правило имеют напряжение 3 Вольта (и большие
+                                размеры). При температуре 21 градус потери для оксид-серебряных и алкалиновых батареек находятся
+                                в пределах 10%, а для литиевых составляют около 2% в год. Определение нужного типа батарейки.
+                                Различные производители применяют различные способы маркировки элементов питания, в добавок, как
+                                мы написали выше, алкалиновые батарейки могут быть заменены аналогичными по размеру
+                                оксид-серебряными. В связи с этим если Вы держите в руках свою старую батарейку и Вам нужна
+                                новая, вопрос о том, какую именно выбрать тем не менее может не иметь такого уж простого ответа.
+                                </div>
+                            </li>
+            
+                        </ul>
+            
+                    </div>
+                </div>
+            </section>
         </div>
-    </footer>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__inner__logo">
+                        <img src="./assets/images/watches/VilAnt.png" alt="logo">
+                        <h6 class="footer__inner__text">ИП Рябинина А.И.</h6>
+                    </div>
+                    <div class="footer__inner__social">
+                        <h1 class="footer__inner__social__title">Также нас можно найти</h1>
+                        <div class="footer__inner__social__block">
+                            <a href="https://wa.me/79040956199" class="social__item" target="_blank">
+                                <img src="./assets/images/social/whatsapp-svgrepo-com.svg" alt="">
+                            </a>
+                            <a href="https://t.me/+79040956199" class="social__item" target="_blank">
+                                <img src="./assets/images/social/telegram-svgrepo-com.svg" alt="">
+                            </a>
+                            <a href="mailto:rvitalia@rambler.ru" class="social__item" target="_blank">
+                                <img src="./assets/images/social/email-9-svgrepo-com.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__inner__about">
+                        <div class="footer__inner__about__wrapper">
+                            <h2>телефон: </h2>
+                            <a href="tel:+79040956199" target="_blank">+7 904 095 61 99</a>
+                        </div>
+                        <div class="footer__inner__about__wrapper">
+                            <h2>Email:</h2>
+                            <a href="email:rvitalia@rambler.ru" target="_blank">rvitalia@rambler.ru</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
     </div>
 
 
     <script src="assets/js/primary.js"></script>
 </body>
+
 </html>

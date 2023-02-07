@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     
@@ -16,275 +17,279 @@
     
     <title>Vilant | Watch</title>
 </head>
+
 <body>
     <div class="page">
-    <header class="header">
-        <div class="container">
-            <div class="header__wrapper">
-                <div class="header__wrapper__logo">
-                    <img src="./assets/images/watches/VilAnt.png" alt="">
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="header__wrapper__logo">
+                        <img src="./assets/images/watches/VilAnt.png" alt="">
+                    </div>
+                    <ul class="header__wrapper__nav">
+                        <li class="header__wrapper__nav__item">
+                            <a href="./index.html">Главная</a>
+                        </li>
+                        <li class="header__wrapper__nav__item">
+                            <a href="./shop.html">Магазин</a>
+                        </li>
+                        <li class="header__wrapper__nav__item">
+                            <a href="./aboutWatch.html">О часах</a>
+                        </li>
+                        <li class="header__wrapper__nav__item">
+                            <a href="./aboutUs.html">О нас</a>
+                        </li>
+                        <!-- <li class="header__wrapper__nav__item">
+                            <a href="">Регистрация</a>
+                        </li>
+                        <li class="header__wrapper__nav__item">
+                            <a href="">Авторизация</a>
+                        </li> -->
+                    </ul>
+        
+                    <!-- ===================слайдер для мобильной версии============== -->
+                    <!-- Разметка слайдера (html код) -->
+                    <div class="itcss" id="slider__mobile">
+                        <div class="itcss__wrapper">
+                            <div class="itcss__items">
+                                <div class="itcss__item header__wrapper__nav__item">
+                                    <a href="./index.html">   Главная</a>
+                                </div>
+                                <div class="itcss__item header__wrapper__nav__item">
+                                    <a href="./shop.html">Магазин</a>
+                                </div>
+                                <div class="itcss__item header__wrapper__nav__item">
+                                    <a href="./aboutWatch.html">О часах</a>
+                                </div>
+                                <div class="itcss__item header__wrapper__nav__item">
+                                    <a href="./aboutUs.html">О нас</a>
+                                </div>
+                            </div>
+                        </div>            
+                    </div>
+        <!-- =================== конец слайдера для мобильной версии============== -->
+        
+                    <div class="header__wrapper__basket" id="basket__header">
+                        <img src="./assets/images/watches/basket.svg" id="basket__logo" alt="">
+                        <span class="basket__count__items"></span>
+                    </div>
                 </div>
-                <ul class="header__wrapper__nav">
-                    <li class="header__wrapper__nav__item">
-                        <a href="./index.html">Главная</a>
-                    </li>
-                    <li class="header__wrapper__nav__item">
-                        <a href="./shop.html">Магазин</a>
-                    </li>
-                    <li class="header__wrapper__nav__item">
-                        <a href="./aboutWatch.html">О часах</a>
-                    </li>
-                    <li class="header__wrapper__nav__item">
-                        <a href="./aboutUs.html">О нас</a>
-                    </li>
-                    <!-- <li class="header__wrapper__nav__item">
-                        <a href="">Регистрация</a>
-                    </li>
-                    <li class="header__wrapper__nav__item">
-                        <a href="">Авторизация</a>
-                    </li> -->
-                </ul>
-    
-                <!-- ===================слайдер для мобильной версии============== -->
-                <!-- Разметка слайдера (html код) -->
-                <div class="itcss" id="slider__mobile">
-                    <div class="itcss__wrapper">
-                        <div class="itcss__items">
-                            <div class="itcss__item header__wrapper__nav__item">
-                                <a href="./index.html">   Главная</a>
+            </div>
+        </header>        <!-- <div class="shop__wrapper"> -->
+            <section class="shop__basket" id="basket">
+                <div class="basket__header">
+                    <h1 class="basket__title">Корзина</h1>
+                    <div class="basket__close"><img id="basket__close" src="./assets/images/shop/icons8-cancel.svg" alt=""></div>
+                </div>
+                <hr>
+                <div class="basket__container" id="basket__container">
+            
+                    <div class="basket__items" id="basket__items">
+            
+            
+                    </div>
+            
+                    <div class="basket__summ">
+                        <span class="basket__summ__inner">Итого :</span>
+                        <span class="basket__summ__result"> 0 </span>
+                    </div>
+                </div>
+                <button class="basket__pay" disabled>Сделать заказ</button>
+            </section>
+        <!-- </div> -->        <section class="modalForm" id="modalForm">
+            <div class="modalForm__container">
+                <div class="modalForm__inner">
+                    <h1 class="modalForm__inner__title">Оформление доставки</h1>
+                    <!--   -->
+                    <form method="post" action="https://formspree.io/f/mnqyjvwo" class="modalForm__inner__form">
+        
+                        <label for="surname" class="modalForm__label form__surname">Фамилия Имя Отчество
+                            <input id="surname" type="text" name="text" class="modalForm__input input__surname" placeholder="Введите вашу фамилию" pattern="^[А-Яа-яЁёs]+$" required>
+                        
+        
+                            <input id="name"  type="text" name="text" required class="modalForm__input input__name" pattern="^[А-Яа-яЁёs]+$" placeholder="Введите ваше имя">
+                        
+                        
+        
+                            <input id="patronymic" type="text" name="text" required class="modalForm__input input__patronymic" pattern="^[А-Яа-яЁёs]+$" placeholder="Введите ваше отчество">
+                        </label>
+        
+        
+                        <label for="email" class="modalForm__label label__email">Email
+                            <input id="email" type="email" name="email" required class="modalForm__input input__email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Введите ваш email">
+                        </label>
+        
+        
+                        <label for="tel" class="modalForm__label label__phone">Телефон 
+                            <input id="tel" type="tel" name="tel" required class="modalForm__input input__phone" pattern="[0-9]{9,11}" placeholder="Введите ваш телефон (без пробелов и скобок)">
+                        </label>
+        
+        
+                        <label for="text" class="modalForm__label label__adress">Адрес
+                            <input  type="text" name="text" required  class="modalForm__input input__adress" placeholder="индекс" pattern="[0-9]{6}">
+                            <input  type="text" name="text" required  class="modalForm__input input__adress" placeholder="улица дом">
+                            <input  type="text" name="text" required  class="modalForm__input input__adress" placeholder="квартира">
+                        </label>
+        
+        
+                        <label for="textarea" class="modalForm__label label__about">Важные заметки для нас
+                            <textarea name="message" id="textarea" class="modalForm__textarea textarea__about" placeholder="Мы что-то должны еще знать??"> </textarea>
+        
+                        </label>
+        
+                        <label for="" class="modalForm__label label__list">Ваш заказ: 
+                            <input class="input__order" id="input__order" type="text" name="text">
+                        </label>
+                        <div class="modalForm__list">
+                            <!-- <div class="modalForm__list__item">
+                                <div class="modalForm__list__watch">
+                                    <img src="" alt="" class="modalForm__list__watch">
+                                </div>
+                                <div class="modalForm__list__countOrders">Выбрана(о) 1 шт.</div>
+                            </div> -->
+                        </div>
+                    <!-- <div class="modalForm__list__orderSumm">700 ₽</div> -->
+        
+                        <button class="modalForm__btn" id="modalForm__btn" type="submit">сделать заказ</button>
+                    </form>
+                </div>
+            </div>
+            <button class="modalForm__close" id="modalForm__close">
+                <img src="./assets/images/modal/close.svg" alt="close">
+            </button>
+        </section>        <div class="main">
+            
+            
+            
+            
+            <section class="shop" >
+                <div class="container shop--container">
+                    <div class="shop__wrapper">
+                        <h1 class="shop__wrapper__title">Категории</h1>
+            
+            
+                        <!-- ====================категориии=========================== -->
+                        <div class="shop__wrapper__inner">
+                            <div class="shop__wrapper__category">
+                                <h6 class="shop__wrapper__category__title">Классические</h6>
+                                <img data-cat="classic" src="./assets/images/shop/IMG_8794-removebg-preview.png" alt=""
+                                    class="shop__wrapper__category__img">
                             </div>
-                            <div class="itcss__item header__wrapper__nav__item">
-                                <a href="./shop.html">Магазин</a>
+                            <div class="shop__wrapper__category">
+                                <h6 class="shop__wrapper__category__title">Мужские</h6>
+                                <img data-cat="Man" src="./assets/images/shop/IMG_8810-removebg-preview.png" alt=""
+                                    class="shop__wrapper__category__img">
                             </div>
-                            <div class="itcss__item header__wrapper__nav__item">
-                                <a href="./aboutWatch.html">О часах</a>
+                            <div class="shop__wrapper__category">
+                                <h6 class="shop__wrapper__category__title">Цифровые</h6>
+                                <img data-cat="digital" src="./assets/images/shop/IMG_9003-removebg-preview.png" alt=""
+                                    class="shop__wrapper__category__img">
                             </div>
-                            <div class="itcss__item header__wrapper__nav__item">
-                                <a href="./aboutUs.html">О нас</a>
+                            <div class="shop__wrapper__category">
+                                <h6 class="shop__wrapper__category__title">Женские</h6>
+                                <img data-cat="woman" src="./assets/images/shop/IMG_8850-removebg-preview.png" alt=""
+                                    class="shop__wrapper__category__img">
+                            </div>
+                            <div class="shop__wrapper__category">
+                                <h6 class="shop__wrapper__category__title">Кварцевые</h6>
+                                <img data-cat="quartz" src="./assets/images/shop/IMG_8825-removebg-preview.png" alt=""
+                                    class="shop__wrapper__category__img">
                             </div>
                         </div>
-                    </div>            
+            
+                        <div class="shop__wrapper__category__mobile">
+                            <button data-cat="classic" class="shop__wrapper__category__mobile__btn">Классические</button>
+                            <button data-cat="Man" class="shop__wrapper__category__mobile__btn">Мужские</button>
+                            <button data-cat="digital" class="shop__wrapper__category__mobile__btn">Цифровые</button>
+                            <button data-cat="woman" class="shop__wrapper__category__mobile__btn">Женские</button>
+                            <button data-cat="quartz" class="shop__wrapper__category__mobile__btn">Кварцевые</button>
+                        </div>
+            
+            
+                        <div class="shop__wrapper__inner__all" onclick="" id="all__watch">
+                            <span class="all__items">П</span>
+                            <span class="all__items">о</span>
+                            <span class="all__items">с</span>
+                            <span class="all__items">м</span>
+                            <span class="all__items">о</span>
+                            <span class="all__items">т</span>
+                            <span class="all__items">р</span>
+                            <span class="all__items">е</span>
+                            <span class="all__items">т</span>
+                            <span class="all__items">ь</span>
+                            <br>
+                            <br>
+                            <span class="all__items">в</span>
+                            <span class="all__items">с</span>
+                            <span class="all__items">е</span>
+                            <!-- <br>
+                            <br>
+                            <span class="all__items">?</span> -->
+                            <!-- <h4 class="all__items">П о с м о т р е т ь в с е ?</h4> -->
+                        </div>
+            
+            
+            
+                        <!-- ============================часы============================= -->
+                        <h1 class="shop__wrapper__items__title" data-scroll="scroll-to">Магазин</h1>
+            
+                        <div class="shop__wrapper__items" id="watch--container">
+            
+                            <!-- =======================item================ -->
+            
+            
+                            <!-- ======================= end item =================== -->
+            
+                        </div>
+            
+            
+            
+                    </div>
                 </div>
-    <!-- =================== конец слайдера для мобильной версии============== -->
-    
-                <div class="header__wrapper__basket" id="basket__header">
-                    <img src="./assets/images/watches/basket.svg" id="basket__logo" alt="">
-                    <span class="basket__count__items"></span>
-                </div>
-            </div>
+            </section>
+            
+            <ul class="pagination" id="shop__pagination">
+            </ul>
         </div>
-    </header>    <!-- <div class="shop__wrapper"> -->
-        <section class="shop__basket" id="basket">
-            <div class="basket__header">
-                <h1 class="basket__title">Корзина</h1>
-                <div class="basket__close"><img id="basket__close" src="./assets/images/shop/icons8-cancel.svg" alt=""></div>
-            </div>
-            <hr>
-            <div class="basket__container" id="basket__container">
-        
-                <div class="basket__items" id="basket__items">
-        
-        
-                </div>
-        
-                <div class="basket__summ">
-                    <span class="basket__summ__inner">Итого :</span>
-                    <span class="basket__summ__result"> 0 </span>
-                </div>
-            </div>
-            <button class="basket__pay" disabled>Сделать заказ</button>
-        </section>
-    <!-- </div> -->    <section class="modalForm" id="modalForm">
-        <div class="modalForm__container">
-            <div class="modalForm__inner">
-                <h1 class="modalForm__inner__title">Оформление доставки</h1>
-                <!--   -->
-                <form method="post" action="https://formspree.io/f/mnqyjvwo" class="modalForm__inner__form">
-    
-                    <label for="surname" class="modalForm__label form__surname">Фамилия Имя Отчество
-                        <input id="surname" type="text" name="text" class="modalForm__input input__surname" placeholder="Введите вашу фамилию" pattern="^[А-Яа-яЁёs]+$" required>
-                    
-    
-                        <input id="name"  type="text" name="text" required class="modalForm__input input__name" pattern="^[А-Яа-яЁёs]+$" placeholder="Введите ваше имя">
-                    
-                    
-    
-                        <input id="patronymic" type="text" name="text" required class="modalForm__input input__patronymic" pattern="^[А-Яа-яЁёs]+$" placeholder="Введите ваше отчество">
-                    </label>
-    
-    
-                    <label for="email" class="modalForm__label label__email">Email
-                        <input id="email" type="email" name="email" required class="modalForm__input input__email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Введите ваш email">
-                    </label>
-    
-    
-                    <label for="tel" class="modalForm__label label__phone">Телефон 
-                        <input id="tel" type="tel" name="tel" required class="modalForm__input input__phone" pattern="[0-9]{9,11}" placeholder="Введите ваш телефон (без пробелов и скобок)">
-                    </label>
-    
-    
-                    <label for="text" class="modalForm__label label__adress">Адрес
-                        <input  type="text" name="text" required  class="modalForm__input input__adress" placeholder="индекс" pattern="[0-9]{6}">
-                        <input  type="text" name="text" required  class="modalForm__input input__adress" placeholder="улица дом">
-                        <input  type="text" name="text" required  class="modalForm__input input__adress" placeholder="квартира">
-                    </label>
-    
-    
-                    <label for="textarea" class="modalForm__label label__about">Важные заметки для нас
-                        <textarea name="message" id="textarea" class="modalForm__textarea textarea__about" placeholder="Мы что-то должны еще знать??"> </textarea>
-    
-                    </label>
-    
-                    <label for="" class="modalForm__label label__list">Ваш заказ: 
-                        <input class="input__order" id="input__order" type="text" name="text">
-                    </label>
-                    <div class="modalForm__list">
-                        <!-- <div class="modalForm__list__item">
-                            <div class="modalForm__list__watch">
-                                <img src="" alt="" class="modalForm__list__watch">
-                            </div>
-                            <div class="modalForm__list__countOrders">Выбрана(о) 1 шт.</div>
-                        </div> -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__inner__logo">
+                        <img src="./assets/images/watches/VilAnt.png" alt="logo">
+                        <h6 class="footer__inner__text">ИП Рябинина А.И.</h6>
                     </div>
-                <!-- <div class="modalForm__list__orderSumm">700 ₽</div> -->
-    
-                    <button class="modalForm__btn" id="modalForm__btn" type="submit">сделать заказ</button>
-                </form>
-            </div>
-        </div>
-        <button class="modalForm__close" id="modalForm__close">
-            <img src="./assets/images/modal/close.svg" alt="close">
-        </button>
-    </section>    
-    
-    
-    
-    <section class="shop" >
-        <div class="container shop--container">
-            <div class="shop__wrapper">
-                <h1 class="shop__wrapper__title">Категории</h1>
-    
-    
-                <!-- ====================категориии=========================== -->
-                <div class="shop__wrapper__inner">
-                    <div class="shop__wrapper__category">
-                        <h6 class="shop__wrapper__category__title">Классические</h6>
-                        <img data-cat="classic" src="./assets/images/shop/IMG_8794-removebg-preview.png" alt=""
-                            class="shop__wrapper__category__img">
+                    <div class="footer__inner__social">
+                        <h1 class="footer__inner__social__title">Также нас можно найти</h1>
+                        <div class="footer__inner__social__block">
+                            <a href="https://wa.me/79040956199" class="social__item" target="_blank">
+                                <img src="./assets/images/social/whatsapp-svgrepo-com.svg" alt="">
+                            </a>
+                            <a href="https://t.me/+79040956199" class="social__item" target="_blank">
+                                <img src="./assets/images/social/telegram-svgrepo-com.svg" alt="">
+                            </a>
+                            <a href="mailto:rvitalia@rambler.ru" class="social__item" target="_blank">
+                                <img src="./assets/images/social/email-9-svgrepo-com.svg" alt="">
+                            </a>
+                        </div>
                     </div>
-                    <div class="shop__wrapper__category">
-                        <h6 class="shop__wrapper__category__title">Мужские</h6>
-                        <img data-cat="Man" src="./assets/images/shop/IMG_8810-removebg-preview.png" alt=""
-                            class="shop__wrapper__category__img">
-                    </div>
-                    <div class="shop__wrapper__category">
-                        <h6 class="shop__wrapper__category__title">Цифровые</h6>
-                        <img data-cat="digital" src="./assets/images/shop/IMG_9003-removebg-preview.png" alt=""
-                            class="shop__wrapper__category__img">
-                    </div>
-                    <div class="shop__wrapper__category">
-                        <h6 class="shop__wrapper__category__title">Женские</h6>
-                        <img data-cat="woman" src="./assets/images/shop/IMG_8850-removebg-preview.png" alt=""
-                            class="shop__wrapper__category__img">
-                    </div>
-                    <div class="shop__wrapper__category">
-                        <h6 class="shop__wrapper__category__title">Кварцевые</h6>
-                        <img data-cat="quartz" src="./assets/images/shop/IMG_8825-removebg-preview.png" alt=""
-                            class="shop__wrapper__category__img">
-                    </div>
-                </div>
-    
-                <div class="shop__wrapper__category__mobile">
-                    <button data-cat="classic" class="shop__wrapper__category__mobile__btn">Классические</button>
-                    <button data-cat="Man" class="shop__wrapper__category__mobile__btn">Мужские</button>
-                    <button data-cat="digital" class="shop__wrapper__category__mobile__btn">Цифровые</button>
-                    <button data-cat="woman" class="shop__wrapper__category__mobile__btn">Женские</button>
-                    <button data-cat="quartz" class="shop__wrapper__category__mobile__btn">Кварцевые</button>
-                </div>
-    
-    
-                <div class="shop__wrapper__inner__all" onclick="" id="all__watch">
-                    <span class="all__items">П</span>
-                    <span class="all__items">о</span>
-                    <span class="all__items">с</span>
-                    <span class="all__items">м</span>
-                    <span class="all__items">о</span>
-                    <span class="all__items">т</span>
-                    <span class="all__items">р</span>
-                    <span class="all__items">е</span>
-                    <span class="all__items">т</span>
-                    <span class="all__items">ь</span>
-                    <br>
-                    <br>
-                    <span class="all__items">в</span>
-                    <span class="all__items">с</span>
-                    <span class="all__items">е</span>
-                    <!-- <br>
-                    <br>
-                    <span class="all__items">?</span> -->
-                    <!-- <h4 class="all__items">П о с м о т р е т ь в с е ?</h4> -->
-                </div>
-    
-    
-    
-                <!-- ============================часы============================= -->
-                <h1 class="shop__wrapper__items__title" data-scroll="scroll-to">Магазин</h1>
-    
-                <div class="shop__wrapper__items" id="watch--container">
-    
-                    <!-- =======================item================ -->
-    
-    
-                    <!-- ======================= end item =================== -->
-    
-                </div>
-    
-    
-    
-            </div>
-        </div>
-    </section>
-    
-    <ul class="pagination" id="shop__pagination">
-    </ul>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__inner">
-                <div class="footer__inner__logo">
-                    <img src="./assets/images/watches/VilAnt.png" alt="logo">
-                    <h6 class="footer__inner__text">ИП Рябинина А.И.</h6>
-                </div>
-                <div class="footer__inner__social">
-                    <h1 class="footer__inner__social__title">Также нас можно найти</h1>
-                    <div class="footer__inner__social__block">
-                        <a href="https://wa.me/79040956199" class="social__item" target="_blank">
-                            <img src="./assets/images/social/whatsapp-svgrepo-com.svg" alt="">
-                        </a>
-                        <a href="https://t.me/+79040956199" class="social__item" target="_blank">
-                            <img src="./assets/images/social/telegram-svgrepo-com.svg" alt="">
-                        </a>
-                        <a href="mailto:rvitalia@rambler.ru" class="social__item" target="_blank">
-                            <img src="./assets/images/social/email-9-svgrepo-com.svg" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="footer__inner__about">
-                    <div class="footer__inner__about__wrapper">
-                        <h2>телефон: </h2>
-                        <a href="tel:+79040956199">+7 904 095 61 99</a>
-                    </div>
-                    <div class="footer__inner__about__wrapper">
-                        <h2>Email:</h2>
-                        <a href="email:rvitalia@rambler.ru">rvitalia@rambler.ru</a>
+                    <div class="footer__inner__about">
+                        <div class="footer__inner__about__wrapper">
+                            <h2>телефон: </h2>
+                            <a href="tel:+79040956199" target="_blank">+7 904 095 61 99</a>
+                        </div>
+                        <div class="footer__inner__about__wrapper">
+                            <h2>Email:</h2>
+                            <a href="email:rvitalia@rambler.ru" target="_blank">rvitalia@rambler.ru</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
     </div>
 
 
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>

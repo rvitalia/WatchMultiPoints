@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     
@@ -16,261 +17,265 @@
     
     <title>Vilant | Watch</title>
 </head>
+
 <body>
     <div class="page">
-    <header class="header">
-        <div class="container">
-            <div class="header__wrapper">
-                <div class="header__wrapper__logo">
-                    <img src="./assets/images/watches/VilAnt.png" alt="">
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="header__wrapper__logo">
+                        <img src="./assets/images/watches/VilAnt.png" alt="">
+                    </div>
+                    <ul class="header__wrapper__nav">
+                        <li class="header__wrapper__nav__item">
+                            <a href="./index.html">Главная</a>
+                        </li>
+                        <li class="header__wrapper__nav__item">
+                            <a href="./shop.html">Магазин</a>
+                        </li>
+                        <li class="header__wrapper__nav__item">
+                            <a href="./aboutWatch.html">О часах</a>
+                        </li>
+                        <li class="header__wrapper__nav__item">
+                            <a href="./aboutUs.html">О нас</a>
+                        </li>
+                        <!-- <li class="header__wrapper__nav__item">
+                            <a href="">Регистрация</a>
+                        </li>
+                        <li class="header__wrapper__nav__item">
+                            <a href="">Авторизация</a>
+                        </li> -->
+                    </ul>
+        
+                    <!-- ===================слайдер для мобильной версии============== -->
+                    <!-- Разметка слайдера (html код) -->
+                    <div class="itcss" id="slider__mobile">
+                        <div class="itcss__wrapper">
+                            <div class="itcss__items">
+                                <div class="itcss__item header__wrapper__nav__item">
+                                    <a href="./index.html">   Главная</a>
+                                </div>
+                                <div class="itcss__item header__wrapper__nav__item">
+                                    <a href="./shop.html">Магазин</a>
+                                </div>
+                                <div class="itcss__item header__wrapper__nav__item">
+                                    <a href="./aboutWatch.html">О часах</a>
+                                </div>
+                                <div class="itcss__item header__wrapper__nav__item">
+                                    <a href="./aboutUs.html">О нас</a>
+                                </div>
+                            </div>
+                        </div>            
+                    </div>
+        <!-- =================== конец слайдера для мобильной версии============== -->
+        
+                    <div class="header__wrapper__basket" id="basket__header">
+                        <img src="./assets/images/watches/basket.svg" id="basket__logo" alt="">
+                        <span class="basket__count__items"></span>
+                    </div>
                 </div>
-                <ul class="header__wrapper__nav">
-                    <li class="header__wrapper__nav__item">
-                        <a href="./index.html">Главная</a>
-                    </li>
-                    <li class="header__wrapper__nav__item">
-                        <a href="./shop.html">Магазин</a>
-                    </li>
-                    <li class="header__wrapper__nav__item">
-                        <a href="./aboutWatch.html">О часах</a>
-                    </li>
-                    <li class="header__wrapper__nav__item">
-                        <a href="./aboutUs.html">О нас</a>
-                    </li>
-                    <!-- <li class="header__wrapper__nav__item">
-                        <a href="">Регистрация</a>
-                    </li>
-                    <li class="header__wrapper__nav__item">
-                        <a href="">Авторизация</a>
-                    </li> -->
-                </ul>
-    
-                <!-- ===================слайдер для мобильной версии============== -->
-                <!-- Разметка слайдера (html код) -->
-                <div class="itcss" id="slider__mobile">
-                    <div class="itcss__wrapper">
-                        <div class="itcss__items">
-                            <div class="itcss__item header__wrapper__nav__item">
-                                <a href="./index.html">   Главная</a>
+            </div>
+        </header>        <!-- <div class="shop__wrapper"> -->
+            <section class="shop__basket" id="basket">
+                <div class="basket__header">
+                    <h1 class="basket__title">Корзина</h1>
+                    <div class="basket__close"><img id="basket__close" src="./assets/images/shop/icons8-cancel.svg" alt=""></div>
+                </div>
+                <hr>
+                <div class="basket__container" id="basket__container">
+            
+                    <div class="basket__items" id="basket__items">
+            
+            
+                    </div>
+            
+                    <div class="basket__summ">
+                        <span class="basket__summ__inner">Итого :</span>
+                        <span class="basket__summ__result"> 0 </span>
+                    </div>
+                </div>
+                <button class="basket__pay" disabled>Сделать заказ</button>
+            </section>
+        <!-- </div> -->        <section class="modalForm" id="modalForm">
+            <div class="modalForm__container">
+                <div class="modalForm__inner">
+                    <h1 class="modalForm__inner__title">Оформление доставки</h1>
+                    <!--   -->
+                    <form method="post" action="https://formspree.io/f/mnqyjvwo" class="modalForm__inner__form">
+        
+                        <label for="surname" class="modalForm__label form__surname">Фамилия Имя Отчество
+                            <input id="surname" type="text" name="text" class="modalForm__input input__surname" placeholder="Введите вашу фамилию" pattern="^[А-Яа-яЁёs]+$" required>
+                        
+        
+                            <input id="name"  type="text" name="text" required class="modalForm__input input__name" pattern="^[А-Яа-яЁёs]+$" placeholder="Введите ваше имя">
+                        
+                        
+        
+                            <input id="patronymic" type="text" name="text" required class="modalForm__input input__patronymic" pattern="^[А-Яа-яЁёs]+$" placeholder="Введите ваше отчество">
+                        </label>
+        
+        
+                        <label for="email" class="modalForm__label label__email">Email
+                            <input id="email" type="email" name="email" required class="modalForm__input input__email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Введите ваш email">
+                        </label>
+        
+        
+                        <label for="tel" class="modalForm__label label__phone">Телефон 
+                            <input id="tel" type="tel" name="tel" required class="modalForm__input input__phone" pattern="[0-9]{9,11}" placeholder="Введите ваш телефон (без пробелов и скобок)">
+                        </label>
+        
+        
+                        <label for="text" class="modalForm__label label__adress">Адрес
+                            <input  type="text" name="text" required  class="modalForm__input input__adress" placeholder="индекс" pattern="[0-9]{6}">
+                            <input  type="text" name="text" required  class="modalForm__input input__adress" placeholder="улица дом">
+                            <input  type="text" name="text" required  class="modalForm__input input__adress" placeholder="квартира">
+                        </label>
+        
+        
+                        <label for="textarea" class="modalForm__label label__about">Важные заметки для нас
+                            <textarea name="message" id="textarea" class="modalForm__textarea textarea__about" placeholder="Мы что-то должны еще знать??"> </textarea>
+        
+                        </label>
+        
+                        <label for="" class="modalForm__label label__list">Ваш заказ: 
+                            <input class="input__order" id="input__order" type="text" name="text">
+                        </label>
+                        <div class="modalForm__list">
+                            <!-- <div class="modalForm__list__item">
+                                <div class="modalForm__list__watch">
+                                    <img src="" alt="" class="modalForm__list__watch">
+                                </div>
+                                <div class="modalForm__list__countOrders">Выбрана(о) 1 шт.</div>
+                            </div> -->
+                        </div>
+                    <!-- <div class="modalForm__list__orderSumm">700 ₽</div> -->
+        
+                        <button class="modalForm__btn" id="modalForm__btn" type="submit">сделать заказ</button>
+                    </form>
+                </div>
+            </div>
+            <button class="modalForm__close" id="modalForm__close">
+                <img src="./assets/images/modal/close.svg" alt="close">
+            </button>
+        </section>        <div class="main">
+            
+            <section class="aboutus">
+                <div class="container">
+                    <h1 class="aboutus__title">ИП Рябинина А.И.</h1>
+                    <div class="aboutus__inner">
+            
+                        <div class="aboutus__inner__firstcontent">
+                            <div class="aboutus__inner">
+                                <span class="aboutus__inner__subtitle">Гражданство</span>
+                                <span class="aboutus__inner__subtext">РФ</span>
                             </div>
-                            <div class="itcss__item header__wrapper__nav__item">
-                                <a href="./shop.html">Магазин</a>
+                            <div class="aboutus__inner">
+                                <span class="aboutus__inner__subtitle">Пол</span>
+                                <span class="aboutus__inner__subtext">женский</span>
                             </div>
-                            <div class="itcss__item header__wrapper__nav__item">
-                                <a href="./aboutWatch.html">О часах</a>
+                            <div class="aboutus__inner">
+                                <span class="aboutus__inner__subtitle">ОГРНИП</span>
+                                <span class="aboutus__inner__subtext">321312300046303 
+                                    от 13 июля 2021 г.</span>
                             </div>
-                            <div class="itcss__item header__wrapper__nav__item">
-                                <a href="./aboutUs.html">О нас</a>
+                            <div class="aboutus__inner">
+                                <span class="aboutus__inner__subtitle">ИНН</span>
+                                <span class="aboutus__inner__subtext">312182103503 </span>
+                            </div>
+                            <div class="aboutus__inner">
+                                <span class="aboutus__inner__subtitle">Дата регистрации
+                                </span>
+                                <span class="aboutus__inner__subtext">13.07.2021</span>
+                            </div>
+                            <div class="aboutus__inner">
+                                <span class="aboutus__inner__subtitle">Регион</span>
+                                <span class="aboutus__inner__subtext">Белгородская область
+                                </span>
                             </div>
                         </div>
-                    </div>            
-                </div>
-    <!-- =================== конец слайдера для мобильной версии============== -->
-    
-                <div class="header__wrapper__basket" id="basket__header">
-                    <img src="./assets/images/watches/basket.svg" id="basket__logo" alt="">
-                    <span class="basket__count__items"></span>
-                </div>
-            </div>
-        </div>
-    </header>    <!-- <div class="shop__wrapper"> -->
-        <section class="shop__basket" id="basket">
-            <div class="basket__header">
-                <h1 class="basket__title">Корзина</h1>
-                <div class="basket__close"><img id="basket__close" src="./assets/images/shop/icons8-cancel.svg" alt=""></div>
-            </div>
-            <hr>
-            <div class="basket__container" id="basket__container">
-        
-                <div class="basket__items" id="basket__items">
-        
-        
-                </div>
-        
-                <div class="basket__summ">
-                    <span class="basket__summ__inner">Итого :</span>
-                    <span class="basket__summ__result"> 0 </span>
-                </div>
-            </div>
-            <button class="basket__pay" disabled>Сделать заказ</button>
-        </section>
-    <!-- </div> -->    <section class="modalForm" id="modalForm">
-        <div class="modalForm__container">
-            <div class="modalForm__inner">
-                <h1 class="modalForm__inner__title">Оформление доставки</h1>
-                <!--   -->
-                <form method="post" action="https://formspree.io/f/mnqyjvwo" class="modalForm__inner__form">
-    
-                    <label for="surname" class="modalForm__label form__surname">Фамилия Имя Отчество
-                        <input id="surname" type="text" name="text" class="modalForm__input input__surname" placeholder="Введите вашу фамилию" pattern="^[А-Яа-яЁёs]+$" required>
-                    
-    
-                        <input id="name"  type="text" name="text" required class="modalForm__input input__name" pattern="^[А-Яа-яЁёs]+$" placeholder="Введите ваше имя">
-                    
-                    
-    
-                        <input id="patronymic" type="text" name="text" required class="modalForm__input input__patronymic" pattern="^[А-Яа-яЁёs]+$" placeholder="Введите ваше отчество">
-                    </label>
-    
-    
-                    <label for="email" class="modalForm__label label__email">Email
-                        <input id="email" type="email" name="email" required class="modalForm__input input__email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Введите ваш email">
-                    </label>
-    
-    
-                    <label for="tel" class="modalForm__label label__phone">Телефон 
-                        <input id="tel" type="tel" name="tel" required class="modalForm__input input__phone" pattern="[0-9]{9,11}" placeholder="Введите ваш телефон (без пробелов и скобок)">
-                    </label>
-    
-    
-                    <label for="text" class="modalForm__label label__adress">Адрес
-                        <input  type="text" name="text" required  class="modalForm__input input__adress" placeholder="индекс" pattern="[0-9]{6}">
-                        <input  type="text" name="text" required  class="modalForm__input input__adress" placeholder="улица дом">
-                        <input  type="text" name="text" required  class="modalForm__input input__adress" placeholder="квартира">
-                    </label>
-    
-    
-                    <label for="textarea" class="modalForm__label label__about">Важные заметки для нас
-                        <textarea name="message" id="textarea" class="modalForm__textarea textarea__about" placeholder="Мы что-то должны еще знать??"> </textarea>
-    
-                    </label>
-    
-                    <label for="" class="modalForm__label label__list">Ваш заказ: 
-                        <input class="input__order" id="input__order" type="text" name="text">
-                    </label>
-                    <div class="modalForm__list">
-                        <!-- <div class="modalForm__list__item">
-                            <div class="modalForm__list__watch">
-                                <img src="" alt="" class="modalForm__list__watch">
+                        <div class="aboutus__inner__secondcontent">
+                            <div class="aboutus__inner">
+                                <span class="aboutus__inner__subtitle">ОГРНИП</span>
+                                <span class="aboutus__inner__subtext">321312300046303 </span>
                             </div>
-                            <div class="modalForm__list__countOrders">Выбрана(о) 1 шт.</div>
-                        </div> -->
+                            <div class="aboutus__inner">
+                                <span class="aboutus__inner__subtitle">ИНН</span>
+                                <span class="aboutus__inner__subtext">312182103503 </span>
+                            </div>
+                            <div class="aboutus__inner">
+                                <span class="aboutus__inner__subtitle">Вид предпринимательства
+                                </span>
+                                <span class="aboutus__inner__subtext">Индивидуальный предприниматель
+                                </span>
+                            </div>
+                            <div class="aboutus__inner">
+                                <span class="aboutus__inner__subtitle">Дата регистрации
+                                </span>
+                                <span class="aboutus__inner__subtext">13 июля 2021 г.
+                                </span>
+                            </div>
+                            <div class="aboutus__inner">
+                                <span class="aboutus__inner__subtitle">Регистратор</span>
+                                <span class="aboutus__inner__subtext">Управление Федеральной налоговой службы по Белгородской области
+                                </span>
+                            </div>
+                            <div class="aboutus__inner">
+                                <span class="aboutus__inner__subtitle">Дата постановки на учёт
+                                </span>
+                                <span class="aboutus__inner__subtext">13 июля 2021 г.
+                                </span>
+                            </div>
+                            <div class="aboutus__inner">
+                                <span class="aboutus__inner__subtitle">Наименование налогового органа
+                                </span>
+                                <span class="aboutus__inner__subtext">МЕЖРАЙОННАЯ ИНСПЕКЦИЯ ФЕДЕРАЛЬНОЙ НАЛОГОВОЙ СЛУЖБЫ №2 ПО БЕЛГОРОДСКОЙ ОБЛАСТИ
+                                </span>
+                            </div>
+                        </div>
+            
                     </div>
-                <!-- <div class="modalForm__list__orderSumm">700 ₽</div> -->
-    
-                    <button class="modalForm__btn" id="modalForm__btn" type="submit">сделать заказ</button>
-                </form>
-            </div>
+                </div>
+            </section>
         </div>
-        <button class="modalForm__close" id="modalForm__close">
-            <img src="./assets/images/modal/close.svg" alt="close">
-        </button>
-    </section>    
-    <section class="aboutus">
-        <div class="container">
-            <h1 class="aboutus__title">ИП Рябинина А.И.</h1>
-            <div class="aboutus__inner">
-    
-                <div class="aboutus__inner__firstcontent">
-                    <div class="aboutus__inner">
-                        <span class="aboutus__inner__subtitle">Гражданство</span>
-                        <span class="aboutus__inner__subtext">РФ</span>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__inner__logo">
+                        <img src="./assets/images/watches/VilAnt.png" alt="logo">
+                        <h6 class="footer__inner__text">ИП Рябинина А.И.</h6>
                     </div>
-                    <div class="aboutus__inner">
-                        <span class="aboutus__inner__subtitle">Пол</span>
-                        <span class="aboutus__inner__subtext">женский</span>
+                    <div class="footer__inner__social">
+                        <h1 class="footer__inner__social__title">Также нас можно найти</h1>
+                        <div class="footer__inner__social__block">
+                            <a href="https://wa.me/79040956199" class="social__item" target="_blank">
+                                <img src="./assets/images/social/whatsapp-svgrepo-com.svg" alt="">
+                            </a>
+                            <a href="https://t.me/+79040956199" class="social__item" target="_blank">
+                                <img src="./assets/images/social/telegram-svgrepo-com.svg" alt="">
+                            </a>
+                            <a href="mailto:rvitalia@rambler.ru" class="social__item" target="_blank">
+                                <img src="./assets/images/social/email-9-svgrepo-com.svg" alt="">
+                            </a>
+                        </div>
                     </div>
-                    <div class="aboutus__inner">
-                        <span class="aboutus__inner__subtitle">ОГРНИП</span>
-                        <span class="aboutus__inner__subtext">321312300046303 
-                            от 13 июля 2021 г.</span>
-                    </div>
-                    <div class="aboutus__inner">
-                        <span class="aboutus__inner__subtitle">ИНН</span>
-                        <span class="aboutus__inner__subtext">312182103503 </span>
-                    </div>
-                    <div class="aboutus__inner">
-                        <span class="aboutus__inner__subtitle">Дата регистрации
-                        </span>
-                        <span class="aboutus__inner__subtext">13.07.2021</span>
-                    </div>
-                    <div class="aboutus__inner">
-                        <span class="aboutus__inner__subtitle">Регион</span>
-                        <span class="aboutus__inner__subtext">Белгородская область
-                        </span>
-                    </div>
-                </div>
-                <div class="aboutus__inner__secondcontent">
-                    <div class="aboutus__inner">
-                        <span class="aboutus__inner__subtitle">ОГРНИП</span>
-                        <span class="aboutus__inner__subtext">321312300046303 </span>
-                    </div>
-                    <div class="aboutus__inner">
-                        <span class="aboutus__inner__subtitle">ИНН</span>
-                        <span class="aboutus__inner__subtext">312182103503 </span>
-                    </div>
-                    <div class="aboutus__inner">
-                        <span class="aboutus__inner__subtitle">Вид предпринимательства
-                        </span>
-                        <span class="aboutus__inner__subtext">Индивидуальный предприниматель
-                        </span>
-                    </div>
-                    <div class="aboutus__inner">
-                        <span class="aboutus__inner__subtitle">Дата регистрации
-                        </span>
-                        <span class="aboutus__inner__subtext">13 июля 2021 г.
-                        </span>
-                    </div>
-                    <div class="aboutus__inner">
-                        <span class="aboutus__inner__subtitle">Регистратор</span>
-                        <span class="aboutus__inner__subtext">Управление Федеральной налоговой службы по Белгородской области
-                        </span>
-                    </div>
-                    <div class="aboutus__inner">
-                        <span class="aboutus__inner__subtitle">Дата постановки на учёт
-                        </span>
-                        <span class="aboutus__inner__subtext">13 июля 2021 г.
-                        </span>
-                    </div>
-                    <div class="aboutus__inner">
-                        <span class="aboutus__inner__subtitle">Наименование налогового органа
-                        </span>
-                        <span class="aboutus__inner__subtext">МЕЖРАЙОННАЯ ИНСПЕКЦИЯ ФЕДЕРАЛЬНОЙ НАЛОГОВОЙ СЛУЖБЫ №2 ПО БЕЛГОРОДСКОЙ ОБЛАСТИ
-                        </span>
-                    </div>
-                </div>
-    
-            </div>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__inner">
-                <div class="footer__inner__logo">
-                    <img src="./assets/images/watches/VilAnt.png" alt="logo">
-                    <h6 class="footer__inner__text">ИП Рябинина А.И.</h6>
-                </div>
-                <div class="footer__inner__social">
-                    <h1 class="footer__inner__social__title">Также нас можно найти</h1>
-                    <div class="footer__inner__social__block">
-                        <a href="https://wa.me/79040956199" class="social__item" target="_blank">
-                            <img src="./assets/images/social/whatsapp-svgrepo-com.svg" alt="">
-                        </a>
-                        <a href="https://t.me/+79040956199" class="social__item" target="_blank">
-                            <img src="./assets/images/social/telegram-svgrepo-com.svg" alt="">
-                        </a>
-                        <a href="mailto:rvitalia@rambler.ru" class="social__item" target="_blank">
-                            <img src="./assets/images/social/email-9-svgrepo-com.svg" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="footer__inner__about">
-                    <div class="footer__inner__about__wrapper">
-                        <h2>телефон: </h2>
-                        <a href="tel:+79040956199">+7 904 095 61 99</a>
-                    </div>
-                    <div class="footer__inner__about__wrapper">
-                        <h2>Email:</h2>
-                        <a href="email:rvitalia@rambler.ru">rvitalia@rambler.ru</a>
+                    <div class="footer__inner__about">
+                        <div class="footer__inner__about__wrapper">
+                            <h2>телефон: </h2>
+                            <a href="tel:+79040956199" target="_blank">+7 904 095 61 99</a>
+                        </div>
+                        <div class="footer__inner__about__wrapper">
+                            <h2>Email:</h2>
+                            <a href="email:rvitalia@rambler.ru" target="_blank">rvitalia@rambler.ru</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
     </div>
 
 
     <script src="assets/js/secondary.js"></script>
 </body>
+
 </html>
