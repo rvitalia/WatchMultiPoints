@@ -2137,6 +2137,7 @@ footer {
   width: 30rem;
   position: fixed;
   top: 0;
+  bottom: 0;
   right: 0;
   z-index: 1;
   border-radius: 0.5rem;
@@ -2211,11 +2212,15 @@ footer {
   display: flex;
   justify-content: center;
   margin-right: 1rem;
+  max-width: 10.6rem;
+  max-height: 13.1rem;
+  overflow: hidden;
 }
 .basket__items__item__header img {
   width: 100%;
   max-width: 20rem;
   height: auto;
+  object-fit: cover;
 }
 
 .basket__items__item__calculation {
